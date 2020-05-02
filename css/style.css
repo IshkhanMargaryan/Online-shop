@@ -1,0 +1,27 @@
+ h5 a{ color: #212529;
+      }
+       h5 a:hover {
+         text-decoration: none;
+         color: #212529;
+       }
+
+p a{ color: #212529;
+      }
+       p a:hover {
+         text-decoration: none;
+         color: #212529;
+       }
+
+.navbar{
+    background-color: #000 !important;
+}
+.navbar .navbar-brand{
+  color: #FFF;
+}
+.navbar .navbar-brand:hover{
+  color: #FFF;
+}
+
+.my-b{ 
+  background-color: #000 !important;
+}
