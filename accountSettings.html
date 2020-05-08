@@ -8,23 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-
-                    
-<!-- 1. Add latest jQuery and fancybox files -->
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-
-
-
-    <title>Home page</title>
+    <title>accountSettings</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="container-fluid">
+   <div class="container-fluid">
    <!--        -->
       <nav class="navbar navbar-expand-md navbar-light bg-light">
   
@@ -113,8 +101,8 @@
 Category</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="shoppage.html">Motherboards</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">SubCategory2</a>
+          <a class="dropdown-item" href="shoppage.html">SubCategory3</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -172,206 +160,233 @@ Category
 </div>
 
 
-     <nav aria-label="breadcrumb" class="m-3">
-  <ol class="breadcrumb mt-3 mr-auto col pl-4">
-    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item"><a href="shoppage.html">Motherboards</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Asrock b450m Steel Legend</li>
-  </ol>
-</nav>
-
+<!-- account -->
 <div class="container-fluid">
-<h1 class="text-info">Asrock b450m Steel Legend</h1>
+  <div class="row p-3">
+    <div class="col-12 col-md-4 col-lg-2 bg-light p-2">
+      <h1>Menu</h1>
+      <div class="list-group">
+  <button type="button" class="list-group-item d-flex justify-content-between list-group-item-action active align-items-center">
+    Messages
+    <span class="badge badge-info badge-pill">14</span>
+  </button>
+  <button type="button" class="list-group-item list-group-item-action">My orders</button>
+  <button type="button" class="list-group-item list-group-item-action">You recently watched</button>
+  <button type="button" class="list-group-item list-group-item-action">My coupons</button>
+   <button type="button" class="list-group-item list-group-item-action">Recently viewed items</button>
+    <button type="button" class="list-group-item list-group-item-action">Delivery address</button>
+</div>
+
+    </div>
+    <div class="col-12 col-md-8 col-lg-10">
+      <img src="image/Programmyi-dlya-sozdaniya-avatarok.png" width="80">
+      <ul class="nav justify-content-center bg-secondary mt-2">
+  <li class="nav-item border-right border-dark">
+    <a class="nav-link  text-white active" href="#">Change my passsword</a>
+  </li>
+  <li class="nav-item border-right border-dark">
+    <a class="nav-link text-white" href="#">Change my email</a>
+  </li>
+  <li class="nav-item border-right border-dark">
+    <a class="nav-link text-white" href="#">Change my name</a>
+  </li>
+  <li class="nav-item border-right border-dark">
+    <a class="nav-link text-white" href="#">Change my avatar</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-white" href="#">My favorite products</a>
+  </li>
+  
+</ul>
+
+<!-- tab -->
+<div class="d-none d-md-block">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">New products</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Discounted products</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Today's best deals</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="d-flex">
+    <div class="card" style="width: 300px;">
+  <img src="image/png-transparent-intel-core-celeron-central-processing-unit-lga-1151-intel-intel-central-processing-unit-brand.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Celeron</h5>
+    <ul>
+      <li>Processor Base Frequency 2.80 GHz</li>
+      <li>Cache 2 MB</li>
+      <li>Memory Types DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V</li>
+      <li>Max Memory Size (dependent on memory type) 64 GB</li>
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
+
+    <div class="card" style="width: 300px;">
+  <img src="image/png-transparent-intel-core-celeron-central-processing-unit-lga-1151-intel-intel-central-processing-unit-brand.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Celeron</h5>
+    <ul>
+      <li>Processor Base Frequency 2.80 GHz</li>
+      <li>Cache 2 MB</li>
+      <li>Memory Types DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V</li>
+      <li>Max Memory Size (dependent on memory type) 64 GB</li>
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
+
+    <div class="card" style="width: 300px;">
+  <img src="image/png-transparent-intel-core-celeron-central-processing-unit-lga-1151-intel-intel-central-processing-unit-brand.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Celeron</h5>
+    <ul>
+      <li>Processor Base Frequency 2.80 GHz</li>
+      <li>Cache 2 MB</li>
+      <li>Memory Types DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V</li>
+      <li>Max Memory Size (dependent on memory type) 64 GB</li>
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+     <div class="d-flex">
+    <div class="card" style="width: 300px;">
+  <img src="image/intel-core-i9-7980xe-extreme-edition-processor-2-6ghz-24-75mb-smart-cache-box-processor-lga-2066-gulftown-intel-png-clip-art.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Intel core i9</h5>
+    <ul>
+    <li>Processor Base Frequency 2.60 GHz</li>
+    <li>Cache 24.75 MB</li>
+    <li>Memory Types DDR4-2666</li>
+    <li>Max Memory Size (dependent on memory type) 128 GB</li>        
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
+
+    <div class="card" style="width: 300px;">
+  <img src="image/intel-core-i9-7980xe-extreme-edition-processor-2-6ghz-24-75mb-smart-cache-box-processor-lga-2066-gulftown-intel-png-clip-art.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Intel core i9</h5>
+    <ul>
+    <li>Processor Base Frequency 2.60 GHz</li>
+    <li>Cache 24.75 MB</li>
+    <li>Memory Types DDR4-2666</li>
+    <li>Max Memory Size (dependent on memory type) 128 GB</li>        
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
+
+    <div class="card" style="width: 300px;">
+  <img src="image/intel-core-i9-7980xe-extreme-edition-processor-2-6ghz-24-75mb-smart-cache-box-processor-lga-2066-gulftown-intel-png-clip-art.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Intel core i9</h5>
+    <ul>
+    <li>Processor Base Frequency 2.60 GHz</li>
+    <li>Cache 24.75 MB</li>
+    <li>Memory Types DDR4-2666</li>
+    <li>Max Memory Size (dependent on memory type) 128 GB</li>        
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+     <div class="d-flex">
+<div class="card" style="width: 300px;">
+  <img src="image/png-transparent-intel-core-central-processing-unit-coffee-lake-lga-1151-intel-intel-central-processing-unit-brand.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Intel core i5</h5>
+    <ul>
+    <li>Processor Base Frequency 3.60 GHz</li>
+    <li>Cache 9 MB</li>
+    <li>Memory Types DDR4-2666</li>
+    <li>Max Memory Size (dependent on memory type) 128 GB</li>    
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
+
+<div class="card" style="width: 300px;">
+  <img src="image/png-transparent-intel-core-central-processing-unit-coffee-lake-lga-1151-intel-intel-central-processing-unit-brand.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Intel core i5</h5>
+    <ul>
+    <li>Processor Base Frequency 3.60 GHz</li>
+    <li>Cache 9 MB</li>
+    <li>Memory Types DDR4-2666</li>
+    <li>Max Memory Size (dependent on memory type) 128 GB</li>    
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
+
+<div class="card" style="width: 300px;">
+  <img src="image/png-transparent-intel-core-central-processing-unit-coffee-lake-lga-1151-intel-intel-central-processing-unit-brand.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Intel core i5</h5>
+    <ul>
+    <li>Processor Base Frequency 3.60 GHz</li>
+    <li>Cache 9 MB</li>
+    <li>Memory Types DDR4-2666</li>
+    <li>Max Memory Size (dependent on memory type) 128 GB</li>    
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
 
  
 
-
-
-
-
-
-<div class="row">
-  <div class="col-md-6">
-       <div class="row">
-    <p class="imglist" style="max-width: 520px;">
     
-    <div class="col-2">
-      <a href="image/13-157-868-V01.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V01.jpg" class="img-fluid" />
-  </a>
 
-  <a href="image/13-157-868-V02.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V02.jpg" class="img-fluid" />
-  </a>
-  
-  <a href="image/13-157-868-V03.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V03.jpg" class="img-fluid"/>
-  </a>
-  
-  <a href="image/13-157-868-V04.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V04.jpg" class="img-fluid"/>
-  </a>
-  <a href="image/13-157-868-V06.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V06.jpg" class="img-fluid"/>
-  </a>
-  <a href="image/13-157-868-V80.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V80.jpg" class="img-fluid"/>
-  </a>
-    </div>
-    <div class="col-10">
-       <a data-fancybox="preview" href="image/motherboard.jpg">
-    <img src="image/motherboard.jpg" class="img-fluid" />
-  </a>
-    </div>
-  </p>
-  </div>
-  </div>  
-  <div class="col-md-6">
-      <p class="display-4">180 &#x20AC;</p>
-
-<form class="form-inline">
-  <label class="sr-only" for="inlineFormInputGroupUsername2">1</label>
-  <div class="input-group mb-2 mr-sm-2">
-    <div class="input-group-prepend">
-      <div class="input-group-text">Quantity</div>
-    </div>
-    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="1">
-  </div>
-
-  <button type="submit" class="btn btn-info mb-2">Add to cart</button>
-</form>
-
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-  <label class="mr-5 custom-control-label" for="customSwitch1">With usb 3.1</label>
-  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-  <label class="mr-5 custom-control-label" for="customSwitch1">With usb 3.1</label>
-  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-  <label class="mr- custom-control-label" for="customSwitch1">With usb 3.1</label>
-</div>
-</div>
-</div>
-
-<ul class="nav nav-pills mt-5 mb-5" id="pills-tab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-  </li>
-</ul>
-<div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">LoremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">LoremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">LoremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-</div>
-<h1 class="d-flex justify-content-center">You may also like</h1>
-  <div class="row justify-content-center">
-      <div class="col-12 col-md-4 col-lg-2 p-0">
-        <div class="card">
-          <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Product</h5>
-            <p class="d-flex justify-content-center text-danger"><big>&#8364; 545</big></p>
-            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 750</big></del></p>
-            <a href="#" class="btn btn-outline-danger d-flex justify-content-center">Add to cart</a>
-          </div>
-       </div>
-      </div>
-            <div class="col-12 col-md-4 col-lg-2 p-0">
-        <div class="card">
-          <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Product</h5>
-            <p class="d-flex justify-content-center text-danger"><big>&#8364; 545</big></p>
-            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 750</big></del></p>
-            <a href="#" class="btn btn-outline-danger d-flex justify-content-center">Add to cart</a>
-          </div>
-       </div>
-      </div>
-            <div class="col-12 col-md-4 col-lg-2 p-0">
-        <div class="card">
-          <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Product</h5>
-            <p class="d-flex justify-content-center text-danger"><big>&#8364; 545</big></p>
-            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 750</big></del></p>
-            <a href="#" class="btn btn-outline-danger d-flex justify-content-center">Add to cart</a>
-          </div>
-       </div>
-      </div>
-            <div class="col-12 col-md-4 col-lg-2 p-0">
-        <div class="card">
-          <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Product</h5>
-            <p class="d-flex justify-content-center text-danger"><big>&#8364; 545</big></p>
-            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 750</big></del></p>
-            <a href="#" class="btn btn-outline-danger d-flex justify-content-center">Add to cart</a>
-          </div>
-       </div>
-      </div>
-                  <div class="col-12 col-md-4 col-lg-2 p-0">
-        <div class="card">
-          <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Product</h5>
-            <p class="d-flex justify-content-center text-danger"><big>&#8364; 545</big></p>
-            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 750</big></del></p>
-            <a href="#" class="btn btn-outline-danger d-flex justify-content-center">Add to cart</a>
-          </div>
-       </div>
-      </div>
-      </div>
-          <nav aria-label="..." class="d-flex justify-content-center">
-      <ul class="pagination">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item active" aria-current="page">
-          <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">Next</a>
-        </li>
-      </ul>
-    </nav>
     <div class="container-fluid">
-        <!--այսպես ավելի ճ՞իշտ է <div class="row">
-        <div class="col-12 col-md-3">
-          <p>Contact us</p>
-        </div>
-        <div class="col-12 col-md-3">
-          <p>Contact us</p>
-        </div>
-        <div class="col-12 col-md-3">
-          <p>Contact us</p>
-        </div>
-        <div class="col-12 col-md-3">
-          <p>Contact us</p>
-        </div>
-      </div>        -->
-  <div class="row d-flex bd-highlight">
+    <div class="row d-flex bd-highlight">
     <div class="card col-12 col-md">
   <div class="card-body d-flex bd-highlight">
       <h5><a class="card-title" href="#">Contact us</a></հ5>
@@ -389,6 +404,14 @@ Category
   </div>
 </div>
     <div class="card col-12 col-md" >
+  
+
+
+
+
+
+
+
   <div class="card-body d-flex bd-highlight">
       <h5><a class="card-title" href="#">Terms & conditions</a></հ5>
   </div>
@@ -472,3 +495,37 @@ Category
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
