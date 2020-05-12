@@ -8,22 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-
-                    
-<!-- 1. Add latest jQuery and fancybox files -->
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-            
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  
-  
-
-    <title>Product</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Shiping Address</title>
+       <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <div class="container-fluid">
@@ -67,9 +53,8 @@
         <option value="3">&#8364;</option>
       </select>
     </div>
- 
+    <a class="navbar-brand" href="cart.html"><img src="image/Cart_Quantity-512.png" width="50px"></img></a>
     <div class="col-auto my-1 collapse navbar-collapse">
-          <a class="navbar-brand" href="cart.html"><img src="image/Cart_Quantity-512.png" width="50px"></img></a>
       <button type="button" class="btn btn-primary">Wishlist <span class="badge badge-danger">9</span>
         <span class="sr-only">unread messages</span>
       </button>
@@ -312,225 +297,310 @@ Computer Systems
 </nav>
 </div>
 
+<!-- payment -->
+<div class="form-horizontal">
+<div class="form-group required">
+<label class="col-sm-2 control-label" for="input-country">Country</label>
+<div class="col-sm-10">
+<select name="country_id" id="input-country" class="form-control">
+<option value=""> --- Please Select --- </option>
+<option value="244">Aaland Islands</option>
+<option value="1">Afghanistan</option>
+<option value="2">Albania</option>
+<option value="3">Algeria</option>
+<option value="4">American Samoa</option>
+<option value="5">Andorra</option>
+<option value="6">Angola</option>
+<option value="7">Anguilla</option>
+<option value="8">Antarctica</option>
+<option value="9">Antigua and Barbuda</option>
+<option value="10">Argentina</option>
+<option value="11">Armenia</option>
+<option value="12">Aruba</option>
+<option value="252">Ascension Island (British)</option>
+<option value="13">Australia</option>
+<option value="14">Austria</option>
+<option value="15">Azerbaijan</option>
+<option value="16">Bahamas</option>
+<option value="17">Bahrain</option>
+<option value="18">Bangladesh</option>
+<option value="19">Barbados</option>
+<option value="20">Belarus</option>
+<option value="21">Belgium</option>
+<option value="22">Belize</option>
+<option value="23">Benin</option>
+<option value="24">Bermuda</option>
+<option value="25">Bhutan</option>
+<option value="26">Bolivia</option>
+<option value="245">Bonaire, Sint Eustatius and Saba</option>
+<option value="27">Bosnia and Herzegovina</option>
+<option value="28">Botswana</option>
+<option value="29">Bouvet Island</option>
+<option value="30">Brazil</option>
+<option value="31">British Indian Ocean Territory</option>
+<option value="32">Brunei Darussalam</option>
+<option value="33">Bulgaria</option>
+<option value="34">Burkina Faso</option>
+<option value="35">Burundi</option>
+<option value="36">Cambodia</option>
+<option value="37">Cameroon</option>
+<option value="38">Canada</option>
+<option value="251">Canary Islands</option>
+<option value="39">Cape Verde</option>
+<option value="40">Cayman Islands</option>
+<option value="41">Central African Republic</option>
+<option value="42">Chad</option>
+<option value="43">Chile</option>
+<option value="44">China</option>
+<option value="45">Christmas Island</option>
+<option value="46">Cocos (Keeling) Islands</option>
+<option value="47">Colombia</option>
+<option value="48">Comoros</option>
+<option value="49">Congo</option>
+<option value="50">Cook Islands</option>
+<option value="51">Costa Rica</option>
+<option value="52">Cote D'Ivoire</option>
+<option value="53">Croatia</option>
+<option value="54">Cuba</option>
+<option value="246">Curacao</option>
+<option value="55">Cyprus</option>
+<option value="56">Czech Republic</option>
+<option value="237">Democratic Republic of Congo</option>
+<option value="57">Denmark</option>
+<option value="58">Djibouti</option>
+<option value="59">Dominica</option>
+<option value="60">Dominican Republic</option>
+<option value="61">East Timor</option>
+<option value="62">Ecuador</option>
+<option value="63">Egypt</option>
+<option value="64">El Salvador</option>
+<option value="65">Equatorial Guinea</option>
+<option value="66">Eritrea</option>
+<option value="67">Estonia</option>
+<option value="68">Ethiopia</option>
+<option value="69">Falkland Islands (Malvinas)</option>
+<option value="70">Faroe Islands</option>
+<option value="71">Fiji</option>
+<option value="72">Finland</option>
+<option value="74">France, Metropolitan</option>
+<option value="75">French Guiana</option>
+<option value="76">French Polynesia</option>
+<option value="77">French Southern Territories</option>
+<option value="126">FYROM</option>
+<option value="78">Gabon</option>
+<option value="79">Gambia</option>
+ <option value="80">Georgia</option>
+<option value="81">Germany</option>
+<option value="82">Ghana</option>
+<option value="83">Gibraltar</option>
+<option value="84">Greece</option>
+<option value="85">Greenland</option>
+<option value="86">Grenada</option>
+<option value="87">Guadeloupe</option>
+<option value="88">Guam</option>
+<option value="89">Guatemala</option>
+<option value="256">Guernsey</option>
+<option value="90">Guinea</option>
+<option value="91">Guinea-Bissau</option>
+<option value="92">Guyana</option>
+<option value="93">Haiti</option>
+<option value="94">Heard and Mc Donald Islands</option>
+<option value="95">Honduras</option>
+<option value="96">Hong Kong</option>
+<option value="97">Hungary</option>
+<option value="98">Iceland</option>
+<option value="99">India</option>
+<option value="100">Indonesia</option>
+<option value="101">Iran (Islamic Republic of)</option>
+<option value="102">Iraq</option>
+<option value="103">Ireland</option>
+<option value="254">Isle of Man</option>
+<option value="104">Israel</option>
+<option value="105">Italy</option>
+<option value="106">Jamaica</option>
+<option value="107">Japan</option>
+<option value="257">Jersey</option>
+<option value="108">Jordan</option>
+<option value="109">Kazakhstan</option>
+<option value="110">Kenya</option>
+<option value="111">Kiribati</option>
+<option value="253">Kosovo, Republic of</option>
+<option value="114">Kuwait</option>
+<option value="115">Kyrgyzstan</option>
+<option value="116">Lao People's Democratic Republic</option>
+<option value="117">Latvia</option>
+<option value="118">Lebanon</option>
+<option value="119">Lesotho</option>
+<option value="120">Liberia</option>
+<option value="121">Libyan Arab Jamahiriya</option>
+<option value="122">Liechtenstein</option>
+<option value="123">Lithuania</option>
+<option value="124">Luxembourg</option>
+<option value="125">Macau</option>
+<option value="127">Madagascar</option>
+<option value="128">Malawi</option>
+<option value="129">Malaysia</option>
+<option value="130">Maldives</option>
+<option value="131">Mali</option>
+<option value="132">Malta</option>
+<option value="133">Marshall Islands</option>
+<option value="134">Martinique</option>
+<option value="135">Mauritania</option>
+<option value="136">Mauritius</option>
+<option value="137">Mayotte</option>
+<option value="138">Mexico</option>
+<option value="139">Micronesia, Federated States of</option>
+<option value="140">Moldova, Republic of</option>
+<option value="141">Monaco</option>
+<option value="142">Mongolia</option>
+<option value="242">Montenegro</option>
+<option value="143">Montserrat</option>
+<option value="144">Morocco</option>
+<option value="145">Mozambique</option>
+<option value="146">Myanmar</option>
+<option value="147">Namibia</option>
+<option value="148">Nauru</option>
+<option value="149">Nepal</option>
+<option value="150">Netherlands</option>
+<option value="151">Netherlands Antilles</option>
+<option value="152">New Caledonia</option>
+<option value="153">New Zealand</option>
+<option value="154">Nicaragua</option>
+<option value="155">Niger</option>
+<option value="156">Nigeria</option>
+<option value="157">Niue</option>
+<option value="158">Norfolk Island</option>
+<option value="112">North Korea</option>
+<option value="159">Northern Mariana Islands</option>
+<option value="160">Norway</option>
+<option value="161">Oman</option>
+<option value="162">Pakistan</option>
+<option value="163">Palau</option>
+<option value="247">Palestinian Territory, Occupied</option>
+<option value="164">Panama</option>
+<option value="165">Papua New Guinea</option>
+<option value="166">Paraguay</option>
+<option value="167">Peru</option>
+<option value="168">Philippines</option>
+<option value="169">Pitcairn</option>
+<option value="170">Poland</option>
+<option value="171">Portugal</option>
+<option value="172">Puerto Rico</option>
+<option value="173">Qatar</option>
+<option value="174">Reunion</option>
+<option value="175">Romania</option>
+<option value="176">Russian Federation</option>
+<option value="177">Rwanda</option>
+<option value="178">Saint Kitts and Nevis</option>
+<option value="179">Saint Lucia</option>
+<option value="180">Saint Vincent and the Grenadines</option>
+<option value="181">Samoa</option>
+<option value="182">San Marino</option>
+<option value="183">Sao Tome and Principe</option>
+<option value="184">Saudi Arabia</option>
+<option value="185">Senegal</option>
+<option value="243">Serbia</option>
+<option value="186">Seychelles</option>
+<option value="187">Sierra Leone</option>
+<option value="188">Singapore</option>
+<option value="189">Slovak Republic</option>
+<option value="190">Slovenia</option>
+<option value="191">Solomon Islands</option>
+<option value="192">Somalia</option>
+<option value="193">South Africa</option>
+<option value="194">South Georgia &amp; South Sandwich Islands</option>
+<option value="113">South Korea</option>
+<option value="248">South Sudan</option>
+<option value="195">Spain</option>
+<option value="196">Sri Lanka</option>
+<option value="249">St. Barthelemy</option>
+<option value="197">St. Helena</option>
+<option value="250">St. Martin (French part)</option>
+<option value="198">St. Pierre and Miquelon</option>
+<option value="199">Sudan</option>
+<option value="200">Suriname</option>
+<option value="201">Svalbard and Jan Mayen Islands</option>
+<option value="202">Swaziland</option>
+<option value="203">Sweden</option>
+<option value="204">Switzerland</option>
+<option value="205">Syrian Arab Republic</option>
+<option value="206">Taiwan</option>
+<option value="207">Tajikistan</option>
+<option value="208">Tanzania, United Republic of</option>
+<option value="209">Thailand</option>
+<option value="210">Togo</option>
+<option value="211">Tokelau</option>
+<option value="212">Tonga</option>
+<option value="213">Trinidad and Tobago</option>
+<option value="255">Tristan da Cunha</option>
+<option value="214">Tunisia</option>
+<option value="215">Turkey</option>
+<option value="216">Turkmenistan</option>
+<option value="217">Turks and Caicos Islands</option>
+<option value="218">Tuvalu</option>
+<option value="219">Uganda</option>
+<option value="220">Ukraine</option>
+<option value="221">United Arab Emirates</option>
+<option value="222" selected="selected">United Kingdom</option>
+<option value="223">United States</option>
+<option value="224">United States Minor Outlying Islands</option>
+<option value="225">Uruguay</option>
+<option value="226">Uzbekistan</option>
+<option value="227">Vanuatu</option>
+<option value="228">Vatican City State (Holy See)</option>
+<option value="229">Venezuela</option>
+<option value="230">Viet Nam</option>
+<option value="231">Virgin Islands (British)</option>
+<option value="232">Virgin Islands (U.S.)</option>
+<option value="233">Wallis and Futuna Islands</option>
+<option value="234">Western Sahara</option>
+<option value="235">Yemen</option>
+<option value="238">Zambia</option>
+<option value="239">Zimbabwe</option>
+</select>
+</div>
+</div>
+<div class="form-group required">
+<label class="col-sm-2 control-label" for="input-zone">Region / State</label>
+<div class="col-sm-10">
+<select name="zone_id" id="input-zone" class="form-control"><option value=""> --- Please Select --- </option><option value="2925">Banskobystrický</option><option value="2926">Bratislavský</option><option value="2927">Košický</option><option value="2928">Nitriansky</option><option value="2929">Prešovský</option><option value="2930">Trenčiansky</option><option value="2931">Trnavský</option><option value="2932">Žilinský</option></select><div class="text-danger">Please select a region / state!</div>
+</div>
+</div>
+<div class="form-group">
+<label class="col-sm-2 control-label" for="input-postcode">Post Code</label>
+<div class="col-sm-10">
+<input type="text" name="postcode" value="" placeholder="Post Code" id="input-postcode" class="form-control"><div class="text-danger">Postcode must be between 2 and 10 characters!</div>
+</div>
+</div>
+</div>
 
-     <nav aria-label="breadcrumb" class="m-3">
-  <ol class="breadcrumb mt-3 mr-auto col pl-4">
-    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item"><a href="shoppage.html">Motherboards</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Asrock b450m Steel Legend</li>
-  </ol>
-</nav>
 
-<div class="container-fluid">
-<h1 class="text-info">Asrock b450m Steel Legend</h1>
-
- 
-
-
-
-
-
-
+<!--  -->
 <div class="row">
-  <div class="col-xl-6">
-       <div class="row">
-    <p class="imglist" style="max-width: 520px;">
-    
-    <div class="col-2">
-      <a href="image/13-157-868-V01.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V01.jpg" class="img-fluid" />
-  </a>
-
-  <a href="image/13-157-868-V02.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V02.jpg" class="img-fluid" />
-  </a>
-  
-  <a href="image/13-157-868-V03.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V03.jpg" class="img-fluid"/>
-  </a>
-  
-  <a href="image/13-157-868-V04.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V04.jpg" class="img-fluid"/>
-  </a>
-  <a href="image/13-157-868-V06.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V06.jpg" class="img-fluid"/>
-  </a>
-  <a href="image/13-157-868-V80.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V80.jpg" class="img-fluid"/>
-  </a>
+    <div class="col-sm-6 ml-sm-auto">
+        <a href="index.html"><button type="button" class="btn btn-secondary btn-lg m-3">Continue Shopping</button>
     </div>
-    <div class="col-10">
-       <a data-fancybox="preview" href="image/motherboard.jpg">
-    <img src="image/motherboard.jpg" class="img-fluid" />
-  </a>
+    <div class="col-sm-3">
+        <a href="placeorder.html"><button type="button" class="btn  btn-primary btn-lg m-3">Checkout</button>
     </div>
-  </p>
-  </div>
-  </div>  
-  <div class="col-xl-6">
-      <p class="display-4">90 &#x20AC;</p>
-
-<form class="form-inline">
-  <label class="sr-only" for="inlineFormInputGroupUsername2">1</label>
-  <div class="input-group mb-2 mr-sm-2">
-    <div class="input-group-prepend">
-      <div class="input-group-text">Quantity</div>
-    </div>
-    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="1">
-  </div>
-
-  <button type="submit" class="btn btn-info mb-2">Add to cart</button>
-</form>
-<div class="custom-control custom-switch">  
-  <input type="checkbox" class="custom-control-input" id="customSwitch3">
-  <label class="mr- custom-control-label" for="customSwitch3">With HDMI</label>
-</div>
-<div class="custom-control custom-switch">
-<input type="checkbox" class="custom-control-input" id="customSwitch2">
-  <label class="mr-5 custom-control-label" for="customSwitch2">With Display port</label>
-</div>
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-  <label class="mr-5 custom-control-label" for="customSwitch1">With usb 3.1</label>
-
-</div>
-<ul>
-  <li class="mt-5">Chipset: AMD Promontory B450</li>
-  <li class="mt-5">Slots: 3x PCI-Express 3. 0 x16 Slots (one runs at x8, one runs at x4), 3x PCI Express 2. 0 x16 Slots (run at x4), 1x PCI Express 2. 0 x1 Slot</li>
-  <li class="mt-5">Multi-graphics: Supports AMD Quad Crossfire and Crossfire Technology</li>
-  <li class="mt-5">Audio: Realtek ALC892 7. 1-Channel High Definition Audio CODEC with content protection</li>
-  <li class="mt-5">LAN: Realtek RTL8111H PCIE x1 Gigabit Ethernet Controller</li>
-</ul>
-</div>
 </div>
 
-<ul class="nav nav-pills mt-5 mb-5" id="pills-tab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">ASRock B450M Steel Legend Motherboard</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Rule Your Own Lighting Way - Polychrome RGB
-</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Full Spike Protection
-</a>
-  </li>
-</ul>
-<div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Powered by AMD B450 chipset, this motherboard flawlessly supports up to 3nd generation AMD Ryzen processors of up to 16 cores. This micro ATX board looks great, featuring a camouflage-themed PCB and aggressive-looking heatsinks. Its onboard LED lighting features full spectrum of RGB colors with various effects, and can synchronize with other devices that support ASRock Polychrome. With a micro ATX form factor, this B450M Steel Legend has quad DIMM slots supporting DDR4 3533+ (OC), two PCI-E x16 slots ready for AMD Quad CrossFireX, two M.2 slots, and two USB 3.1 Gen2 ports (rear Type-A + Type-C), so you have all the essentials needed to build your new powerhouse. Moreover, this board is constructed to be tough with Super Alloy components, Full Spike Protection, and a PCI-E x16 slot covered by steel plate for better strength and less EMI.
-
-If you're looking for a solid, budget-friendly yet feature-rich foundation for your dream system, look no further than ASRock B450M Steel Legend. </div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">ASRock motherboards deliver stunning performance and superior aesthetics to rule your own colorful lighting way! ASRock offers a very comprehensive control to perform the built-in RGB LEDs or the connected LED strips, CPU fans, coolers, chassis and any RGB devices smoothly. Devices can be synchronized across the Polychrome RGB Sync-certified accessories as well.
 
 </div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Some sensitive digital components on the motherboard are vulnerable to power surges, the excessive current may cause your system to malfunction immediately. ASRock Full Spike Protection includes various technologies to prevent your motherboard’s components from being damaged by these unexpected voltage spikes.</div>
-</div>
-<h1 class="d-flex justify-content-center">You may also like</h1>
-  
 
 
 
-<div class="responsive m-5">
-    <div class="m-1">
-      <div class="card w-100">
-      <img src="slick/image/19-118-072-V01.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">intel core i3</h5>
-        <ul>
-          <li>9th Gen Intel Processor</li>
-          <li>Max Turbo Frequency 4.2 GHz</li>
-        </ul>
-        <a href="#" class="btn btn-primary">Add to cart</a>
-      </div>
-    </div>
-    </div>
-    <div class="m-1">
-      <div class="card w-100">
-      <img src="slick/image/19-117-980-V01.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">intel core i5</h5>
-        <ul>
-          <li>9th Gen Intel Processor</li>
-          <li>Max Turbo Frequency 4.1 GHz</li>
-        </ul>
-        <a href="#" class="btn btn-primary">Add to cart</a>
-      </div>
-    </div>
-    </div>
-    <div class="m-1">
-      <div class="card w-100">
-      <img src="slick/image/19-117-994-V01.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">intel core i7</h5>
-        <ul>
-          <li>9th Gen Intel Processor</li>
-          <li>Max Turbo Frequency 4.9 GHz</li>
-        </ul>
-        <a href="#" class="btn btn-primary">Add to cart</a>
-      </div>
-    </div>
-    </div>
-    <div class="m-1">
-      <div class="card w-100">
-      <img src="slick/image/core i9 x.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">intel core i9x</h5>
-        <ul>
-          <li>9th Gen Intel Processor</li>
-          <li>Max Turbo Frequency 4.4 GHz</li>
-        </ul>
-        <a href="#" class="btn btn-primary">Add to cart</a>
-      </div>
-    </div>
-    </div>
-    <div class="m-1">
-      <div class="card w-100">
-      <img src="slick/image/19-117-957-V01.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">intel core i9</h5>
-        <ul>
-          <li>9th Gen Intel Processor</li>
-          <li>Max Turbo Frequency 5.0 GHz</li>
-        </ul>
-        <a href="#" class="btn btn-primary">Add to cart</a>
-      </div>
-    </div>
-    </div>
-    <div class="m-1">
-      <div class="card w-100">
-  <img src="slick/image/19-113-569-V10.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Ryzen 5</h5>
-    <ul>
-      <li>3rd Gen Ryzen</li>
-      <li>Max Boost Frequency 4.2 GHz</li>
-    </ul>
-    <a href="#" class="btn btn-primary">Add to cart</a>
-  </div>
-</div>
-    </div>
-    
-  </div>
 
 
 
+
+
+
+
+
+<!-- footer -->
     <div class="container-fluid">
-        <!--այսպես ավելի ճ՞իշտ է <div class="row">
-        <div class="col-12 col-md-3">
-          <p>Contact us</p>
-        </div>
-        <div class="col-12 col-md-3">
-          <p>Contact us</p>
-        </div>
-        <div class="col-12 col-md-3">
-          <p>Contact us</p>
-        </div>
-        <div class="col-12 col-md-3">
-          <p>Contact us</p>
-        </div>
-      </div>        -->
-  <div class="row d-flex bd-highlight">
+    <div class="row d-flex bd-highlight">
     <div class="card col-12 col-md">
   <div class="card-body d-flex bd-highlight">
       <h5><a class="card-title" href="#">Contact us</a></հ5>
@@ -548,6 +618,14 @@ If you're looking for a solid, budget-friendly yet feature-rich foundation for y
   </div>
 </div>
     <div class="card col-12 col-md" >
+  
+
+
+
+
+
+
+
   <div class="card-body d-flex bd-highlight">
       <h5><a class="card-title" href="#">Terms & conditions</a></հ5>
   </div>
@@ -603,83 +681,11 @@ If you're looking for a solid, budget-friendly yet feature-rich foundation for y
     <nav class="navbar-brand ml-5" >©Tumo Center For Creative Technologies</nav>
 </nav>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
-     <script type="text/javascript" src="slick/slick.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-     $('.responsive').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
- });
-
-
-
-
-
-
-  </script>
-
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

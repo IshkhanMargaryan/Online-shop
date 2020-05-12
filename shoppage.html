@@ -55,6 +55,7 @@
     </div>
  
     <div class="col-auto my-1 collapse navbar-collapse">
+          <a class="navbar-brand" href="cart.html"><img src="image/Cart_Quantity-512.png" width="50px"></img></a>
       <button type="button" class="btn btn-primary">Wishlist <span class="badge badge-danger">9</span>
         <span class="sr-only">unread messages</span>
       </button>
@@ -66,8 +67,7 @@
     </form>
 </nav>
       
-    <!-- nav մի քանի հատ կարող ենք օգտ․ ????? -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark d-flex">
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark d-flex">
   <a class="navbar-brand flex-grow-1" href="index.html">Shop</a>
   <div class="form-inline my-2 my-md-0">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -79,14 +79,153 @@
   <div class="dropdown ml-3">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My account</button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">Login</a>
-      <a class="dropdown-item" href="#">Register</a>
-      <a class="dropdown-item" href="#">My orders</a>
+      <a class="dropdown-item" data-toggle="modal" data-target="#login" href="#">Login</a>
+      <a class="dropdown-item" data-toggle="modal" data-target="#register" href="#">Register</a>
+      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myorder">My orders</a>
       <a class="dropdown-item" href="accountSettings.html">Account settings</a>
     </div>
 </div>
 </div>
 </nav>
+      
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group col-7">
+    <label for="exampleInputEmail1">Email address or name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group col-7">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check m-3">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember</label>
+  </div>
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Log in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group col-7">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group col-7">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="text" class="form-control" id="exampleInputText">
+  </div>
+  <div class="form-group col-7">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group col-7">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check m-3">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember</label>
+  </div>
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myorder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">My order</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-flex justify-content-center">
+        <div class="row"> 
+          <!-- row կարելի է առանց կոնտեյների օգտգործել՞՞՞՞՞ -->
+            <div class="col-12">
+                <div class="card w-100">
+  <img src="image/20-233-970-03.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">RAM</h5>
+    <p class="card-text">Designed for high-performance overclocking Each Vengeance LPX module is built with a pure aluminum heatspreader for faster heat dissipation and cooler operation; and the eight-layer PCB helps manage heat and provides superior overclocking headroom. Each IC is individually screened for performance potential. Designed for great looks Available in multiple colors to match your motherboard, your components, or just your style.</p>
+    <h1  class="d-flex justify-content-center text-success">180 &#8364;</h1>
+  </div>
+</div>
+</div>
+<div class="col-12">
+ <div class="card w-100">
+  <img src="image/1E8-0006-00101-S07.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">HDD</h5>
+    <p class="card-text">Fast transfer rates When connected to a USB 3.0 port, WD Elements portable storage delivers maximum performance for data transfers. Transfer a full-length HD movie in a fraction of the time it takes with USB 2.0. Performance may vary based on user's hardware and system configuration.</p>
+    <h1  class="d-flex justify-content-center text-success">64 &#8364;</h1>
+  </div>
+</div>
+</div>
+<div class="col-12">
+<div class="card w-100">
+  <img src="image/14-137-521-V01.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Video Card</h5>
+    <p class="card-text">All Solid Capacitors: 10 years long lifetime under full load. Lower temperature and higher efficiency. Aluminum core for higher stability. Dual Fans Thermal Design: Dual fans covers more area of heatsink to take heat away more efficiently. Afterburner Overclocking Utility: Wireless control through Android/iOS devices. </p>
+    <h1  class="d-flex justify-content-center text-success">120 &#8364;</h1>
+  </div>
+</div>
+</div>
+<div class="col-12">
+  <h1 class="text-success">Total: 450 &#8364;</h1>
+</div>
+</div>
+ </div>
+     <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       
 
 
@@ -98,60 +237,60 @@
   <ul class="navbar-nav col-12 d-flex justify-content-around">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category</a>
+Core Components</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="shoppage.html">Motherboards</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">Video Cards</a>
+          <a class="dropdown-item" href="shoppage.html">Processors</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category
+Other core components
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">Power Supplies</a>
+          <a class="dropdown-item" href="shoppage.html">Computer Cases</a>
+          <a class="dropdown-item" href="shoppage.html">Fans</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category
+          Storage Devices
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">USB Flash Drives</a>
+          <a class="dropdown-item" href="shoppage.html">HDDs</a>
+          <a class="dropdown-item" href="shoppage.html">SSDs</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category
-        </a>
+Memory</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">Laptop Memory</a>
+          <a class="dropdown-item" href="shoppage.html">Mac Memory</a>
+          <a class="dropdown-item" href="shoppage.html">Desktop Memory</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category
+PC Cooling
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">Hard Drive Cooling</a>
+          <a class="dropdown-item" href="shoppage.html">Chipset Cooling</a>
+          <a class="dropdown-item" href="shoppage.html">VGA Cooling</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Computer Systems
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="shoppage.html">Desktops</a>
+          <a class="dropdown-item" href="shoppage.html">Laptops</a>
+          <a class="dropdown-item" href="shoppage.html">Intel NUC</a>
         </div>
       </li>
     </ul>
@@ -185,68 +324,6 @@ Category
         <div class="col-4">
 <div class="accordion" id="accordionExample">
   <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Select Socket
-        </button>
-      </h2>
-    </div>
-    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Select Brand of socket
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-              <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -259,19 +336,19 @@ Category
               <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
+    DDR4
   </label>
 </div>
       <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
+    DDR3
   </label>
 </div>
       <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
+    DDR3L
   </label>
 </div>
       </div>
@@ -281,7 +358,7 @@ Category
     <div class="card-header" id="headingFour">
       <h2 class="mb-0">
         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          Select Brand of socket
+          Select AMD socket
         </button>
       </h2>
     </div>
@@ -290,29 +367,91 @@ Category
               <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
+    AM3
   </label>
 </div>
       <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
+    AM4
   </label>
 </div>
       <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
+    AM3+
   </label>
 </div>
       </div>
     </div>
   </div>
    <div class="card">
-    <div class="card-header" id="headingFive">
+    <div class="card-header" id="headingFour">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Select Intel socket
+        </button>
+      </h2>
+    </div>
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+              <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    LGA 1150
+  </label>
+</div>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    LGA 1151
+  </label>
+</div>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    LGA 2011
+  </label>
+</div>
+      </div>
+    </div>
+  </div>
+   <div class="card">
+    <div class="card-header" id="headingFour">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Form Factor
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+              <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    ATX
+  </label>
+</div>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    microATX
+  </label>
+</div>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Extended ATX
+  </label>
+</div>
+      </div>
+    </div>
+  </div>
+     <div class="card">
+    <div class="card-header" id="headingFour">
       <h2 class="mb-0">
         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          Select Brand of socket
+          Manufacturer
         </button>
       </h2>
     </div>
@@ -321,343 +460,33 @@ Category
               <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
+    Asrock
   </label>
 </div>
       <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
+    Asus
   </label>
 </div>
       <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      </div>
-    </div>
-  </div>
-   <div class="card">
-    <div class="card-header" id="headingSix">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          Select Brand of socket
-        </button>
-      </h2>
-    </div>
-    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-      <div class="card-body">
-              <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
+  Gigabyte
   </label>
 </div>
       <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
+  MSI
   </label>
 </div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      </div>
-    </div>
-  </div>
-   <div class="card">
-    <div class="card-header" id="headingSeven">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-          Select Brand of socket
-        </button>
-      </h2>
-    </div>
-    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-      <div class="card-body">
-              <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      </div>
-    </div>
-  </div>
-   <div class="card">
-    <div class="card-header" id="headingEight">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-          Select Brand of socket
-        </button>
-      </h2>
-    </div>
-    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
-      <div class="card-body">
-              <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      </div>
-    </div>
-  </div>
-   <div class="card">
-    <div class="card-header" id="headingNine">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-          Select Brand of socket
-        </button>
-      </h2>
-    </div>
-    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
-      <div class="card-body">
-              <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      </div>
-    </div>
-  </div>
-   <div class="card">
-    <div class="card-header" id="headingTen">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-          Select Brand of socket
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
-      <div class="card-body">
-              <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      </div>
-    </div>
-  </div>
-   <div class="card">
-    <div class="card-header" id="headingEleven">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-          Select Brand of socket
-        </button>
-      </h2>
-    </div>
-    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
-      <div class="card-body">
-              <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      </div>
-    </div>
-  </div>
-   <div class="card">
-    <div class="card-header" id="headingTwelve">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-          Select Brand of socket
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
-      <div class="card-body">
-              <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      </div>
-    </div>
-  </div>
-   <div class="card">
-    <div class="card-header" id="headingThirteen">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-          Select Brand of socket
-        </button>
-      </h2>
-    </div>
-    <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
-      <div class="card-body">
-              <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      </div>
-    </div>
-  </div>
-   <div class="card">
-    <div class="card-header" id="headingFourteen">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-          Select Brand of socket
-        </button>
-      </h2>
-    </div>
-    <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
-      <div class="card-body">
-              <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      </div>
-    </div>
-  </div>
-   <div class="card">
-    <div class="card-header" id="headingFifteen">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-          Select Brand of socket
-        </button>
-      </h2>
-    </div>
-    <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordionExample">
-      <div class="card-body">
-              <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
-      <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
-    Default checkbox
-  </label>
-</div>
+
       </div>
     </div>
   </div>
 </div>
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-  <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-</div>
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-  <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-</div>
+
 
 </div>
 
@@ -680,7 +509,7 @@ Category
       <li>AMD Ryzen series CPUs (Picasso) support DDR4 2933/ 2667/ 2400/ 2133 non-ECC, un-buffered memory</li>
     </ul>
   </div>
-  <div class="col"><p class="display-4">100 &#x20AC;</p>
+  <div class="col"><p class="display-4">90 &#x20AC;</p>
     <button type="button" class="btn-lg btn-info">Add to cart</button>
   </div>
 </div>
@@ -697,7 +526,7 @@ Category
       <li>AMD Ryzen series CPUs (Picasso) support DDR4 2933/ 2667/ 2400/ 2133 non-ECC, un-buffered memory</li>
     </ul>
   </div>
-  <div class="col"><p class="display-4">100 &#x20AC;</p>
+  <div class="col"><p class="display-4">90 &#x20AC;</p>
     <button type="button" class="btn-lg btn-info">Add to cart</button>
   </div>
 </div>
@@ -714,7 +543,7 @@ Category
       <li>AMD Ryzen series CPUs (Picasso) support DDR4 2933/ 2667/ 2400/ 2133 non-ECC, un-buffered memory</li>
     </ul>
   </div>
-  <div class="col"><p class="display-4">100 &#x20AC;</p>
+  <div class="col"><p class="display-4">90 &#x20AC;</p>
     <button type="button" class="btn-lg btn-info">Add to cart</button>
   </div>
 </div>
@@ -731,7 +560,7 @@ Category
       <li>AMD Ryzen series CPUs (Picasso) support DDR4 2933/ 2667/ 2400/ 2133 non-ECC, un-buffered memory</li>
     </ul>
   </div>
-  <div class="col"><p class="display-4">100 &#x20AC;</p>
+  <div class="col"><p class="display-4">90 &#x20AC;</p>
     <button type="button" class="btn-lg btn-info">Add to cart</button>
   </div>
 </div>

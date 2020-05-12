@@ -8,22 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-
-                    
-<!-- 1. Add latest jQuery and fancybox files -->
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-            
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  
-  
-
-    <title>Product</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Cart</title>
+       <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <div class="container-fluid">
@@ -67,9 +53,8 @@
         <option value="3">&#8364;</option>
       </select>
     </div>
- 
+    <a class="navbar-brand" href="cart.html"><img src="image/Cart_Quantity-512.png" width="50px"></img></a>
     <div class="col-auto my-1 collapse navbar-collapse">
-          <a class="navbar-brand" href="cart.html"><img src="image/Cart_Quantity-512.png" width="50px"></img></a>
       <button type="button" class="btn btn-primary">Wishlist <span class="badge badge-danger">9</span>
         <span class="sr-only">unread messages</span>
       </button>
@@ -312,225 +297,128 @@ Computer Systems
 </nav>
 </div>
 
+<!-- cart -->
+<div class="container-fluid mt-5 mb-5">
+<div class="table-responsive mt-5 mb-5">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th ><span class="d-none d-lg-block">Product name</span></th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Delete</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="image/20-233-970-03.jpg" width="400"></td>
+      <td><p class="d-none d-lg-block">Designed for high-performance overclocking
+Each Vengeance LPX module is built with a pure aluminum heatspreader for faster heat dissipation and cooler operation; and the eight-layer PCB helps manage heat and provides superior overclocking headroom.
+Each IC is individually screened for performance potential.
 
-     <nav aria-label="breadcrumb" class="m-3">
-  <ol class="breadcrumb mt-3 mr-auto col pl-4">
-    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item"><a href="shoppage.html">Motherboards</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Asrock b450m Steel Legend</li>
-  </ol>
-</nav>
+Designed for great looks
+Available in multiple colors to match your motherboard, your components, or just your style.
 
-<div class="container-fluid">
-<h1 class="text-info">Asrock b450m Steel Legend</h1>
+Performance and Compatibility
+Vengeance LPX is optimized and compatibility tested for the latest Intel X99 and 100 Series motherboards and offers higher frequencies, greater bandwidth, and lower power consumption.
+XMP 2.0 support for trouble-free automatic overclocking.
 
- 
+Low-profile heatspreader design
+The Vengeance LPX module height is carefully designed to fit smaller spaces.</p></td>
+      <td>  <h5>180 &#x20AC;</h5></td>
+
+<td><input type="number" value="2"></td>
+<td><a href="#"><img src="image/trash-512.png" width="30"></a></td>
+
+<td><input type="number" value="2"></td>
+    </tr>
+     <tr>
+      <td><img src="image/1E8-0006-00101-S07.jpg" width="400"></td>
+      <td><p class="d-none d-lg-block">Fast transfer rates
+When connected to a USB 3.0 port, WD Elements portable storage delivers maximum performance for data transfers. Transfer a full-length HD movie in a fraction of the time it takes with USB 2.0.
+Performance may vary based on user's hardware and system configuration.
+
+USB 3.0 and USB 2.0 compatibility
+Works seamlessly with the latest USB 3.0 devices and is backward compatible with USB 2.0 devices as well.
+
+High capacity in a small enclosure
+The small, lightweight design offers high-capacity storage, making WD Elements portable storage the ideal companion for consumers who want to take their important files with them.
+
+Improve PC performance
+When your internal drive is almost full your PC slows down. Don't delete files. Free up space on your internal drive by transferring files to your WD Elements and get your PC moving again.</p></td>
+      <td>  <h5>64 &#x20AC;</h5></td>
+
+<td><input type="number" value="2"></td>
+<td><a href="#"><img src="image/trash-512.png" width="30"></a></td>
+
+<td><input type="number" value="2"></td>
+    </tr>
+     <tr>
+      <td><img src="image/14-137-521-V01.jpg" width="400"></td>
+      <td><p class="d-none d-lg-block">All Solid Capacitors:
+10 years long lifetime under full load.
+Lower temperature and higher efficiency.
+Aluminum core for higher stability.
+
+Dual Fans Thermal Design:
+Dual fans covers more area of heatsink to take heat away more efficiently.
+
+Afterburner Overclocking Utility:
+Wireless control through Android/iOS devices.
+Predator: In-game video recording.
+
+AMD FreeSync:
+Synchronizes the display refresh to your Radeon RX Series GPU for the fast, smooth gaming.
+
+Form Factor & Dimensions</p></td>
+      <td>  <h5>120 &#x20AC;</h5></td>
+
+<td><input type="number" value="2"></td>
+<td><a href="#"><img src="image/trash-512.png" width="30"></a></td>
+
+<td><input type="number" value="2"></td>
+    </tr>
+   
+  
+
+    <tr>
+      <td colspan="5">Total Price</td>
+      <td class="total_price">450&#x20AC;</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
-
-
-
+<!--  -->
 <div class="row">
-  <div class="col-xl-6">
-       <div class="row">
-    <p class="imglist" style="max-width: 520px;">
-    
-    <div class="col-2">
-      <a href="image/13-157-868-V01.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V01.jpg" class="img-fluid" />
-  </a>
-
-  <a href="image/13-157-868-V02.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V02.jpg" class="img-fluid" />
-  </a>
-  
-  <a href="image/13-157-868-V03.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V03.jpg" class="img-fluid"/>
-  </a>
-  
-  <a href="image/13-157-868-V04.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V04.jpg" class="img-fluid"/>
-  </a>
-  <a href="image/13-157-868-V06.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V06.jpg" class="img-fluid"/>
-  </a>
-  <a href="image/13-157-868-V80.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
-    <img src="image/13-157-868-V80.jpg" class="img-fluid"/>
-  </a>
+    <div class="col-sm-6 ml-sm-auto">
+        <a href="index.html"><button type="button" class="btn btn-secondary btn-lg">Continue Shopping</button></a>
     </div>
-    <div class="col-10">
-       <a data-fancybox="preview" href="image/motherboard.jpg">
-    <img src="image/motherboard.jpg" class="img-fluid" />
-  </a>
+    <div class="col-sm-3">
+        <a href="payment.html"><button type="button" class="btn  btn-primary btn-lg">Checkout</button></a>
     </div>
-  </p>
-  </div>
-  </div>  
-  <div class="col-xl-6">
-      <p class="display-4">90 &#x20AC;</p>
-
-<form class="form-inline">
-  <label class="sr-only" for="inlineFormInputGroupUsername2">1</label>
-  <div class="input-group mb-2 mr-sm-2">
-    <div class="input-group-prepend">
-      <div class="input-group-text">Quantity</div>
-    </div>
-    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="1">
-  </div>
-
-  <button type="submit" class="btn btn-info mb-2">Add to cart</button>
-</form>
-<div class="custom-control custom-switch">  
-  <input type="checkbox" class="custom-control-input" id="customSwitch3">
-  <label class="mr- custom-control-label" for="customSwitch3">With HDMI</label>
-</div>
-<div class="custom-control custom-switch">
-<input type="checkbox" class="custom-control-input" id="customSwitch2">
-  <label class="mr-5 custom-control-label" for="customSwitch2">With Display port</label>
-</div>
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-  <label class="mr-5 custom-control-label" for="customSwitch1">With usb 3.1</label>
-
-</div>
-<ul>
-  <li class="mt-5">Chipset: AMD Promontory B450</li>
-  <li class="mt-5">Slots: 3x PCI-Express 3. 0 x16 Slots (one runs at x8, one runs at x4), 3x PCI Express 2. 0 x16 Slots (run at x4), 1x PCI Express 2. 0 x1 Slot</li>
-  <li class="mt-5">Multi-graphics: Supports AMD Quad Crossfire and Crossfire Technology</li>
-  <li class="mt-5">Audio: Realtek ALC892 7. 1-Channel High Definition Audio CODEC with content protection</li>
-  <li class="mt-5">LAN: Realtek RTL8111H PCIE x1 Gigabit Ethernet Controller</li>
-</ul>
-</div>
 </div>
 
-<ul class="nav nav-pills mt-5 mb-5" id="pills-tab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">ASRock B450M Steel Legend Motherboard</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Rule Your Own Lighting Way - Polychrome RGB
-</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Full Spike Protection
-</a>
-  </li>
-</ul>
-<div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Powered by AMD B450 chipset, this motherboard flawlessly supports up to 3nd generation AMD Ryzen processors of up to 16 cores. This micro ATX board looks great, featuring a camouflage-themed PCB and aggressive-looking heatsinks. Its onboard LED lighting features full spectrum of RGB colors with various effects, and can synchronize with other devices that support ASRock Polychrome. With a micro ATX form factor, this B450M Steel Legend has quad DIMM slots supporting DDR4 3533+ (OC), two PCI-E x16 slots ready for AMD Quad CrossFireX, two M.2 slots, and two USB 3.1 Gen2 ports (rear Type-A + Type-C), so you have all the essentials needed to build your new powerhouse. Moreover, this board is constructed to be tough with Super Alloy components, Full Spike Protection, and a PCI-E x16 slot covered by steel plate for better strength and less EMI.
-
-If you're looking for a solid, budget-friendly yet feature-rich foundation for your dream system, look no further than ASRock B450M Steel Legend. </div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">ASRock motherboards deliver stunning performance and superior aesthetics to rule your own colorful lighting way! ASRock offers a very comprehensive control to perform the built-in RGB LEDs or the connected LED strips, CPU fans, coolers, chassis and any RGB devices smoothly. Devices can be synchronized across the Polychrome RGB Sync-certified accessories as well.
 
 </div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Some sensitive digital components on the motherboard are vulnerable to power surges, the excessive current may cause your system to malfunction immediately. ASRock Full Spike Protection includes various technologies to prevent your motherboard’s components from being damaged by these unexpected voltage spikes.</div>
-</div>
-<h1 class="d-flex justify-content-center">You may also like</h1>
-  
 
 
 
-<div class="responsive m-5">
-    <div class="m-1">
-      <div class="card w-100">
-      <img src="slick/image/19-118-072-V01.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">intel core i3</h5>
-        <ul>
-          <li>9th Gen Intel Processor</li>
-          <li>Max Turbo Frequency 4.2 GHz</li>
-        </ul>
-        <a href="#" class="btn btn-primary">Add to cart</a>
-      </div>
-    </div>
-    </div>
-    <div class="m-1">
-      <div class="card w-100">
-      <img src="slick/image/19-117-980-V01.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">intel core i5</h5>
-        <ul>
-          <li>9th Gen Intel Processor</li>
-          <li>Max Turbo Frequency 4.1 GHz</li>
-        </ul>
-        <a href="#" class="btn btn-primary">Add to cart</a>
-      </div>
-    </div>
-    </div>
-    <div class="m-1">
-      <div class="card w-100">
-      <img src="slick/image/19-117-994-V01.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">intel core i7</h5>
-        <ul>
-          <li>9th Gen Intel Processor</li>
-          <li>Max Turbo Frequency 4.9 GHz</li>
-        </ul>
-        <a href="#" class="btn btn-primary">Add to cart</a>
-      </div>
-    </div>
-    </div>
-    <div class="m-1">
-      <div class="card w-100">
-      <img src="slick/image/core i9 x.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">intel core i9x</h5>
-        <ul>
-          <li>9th Gen Intel Processor</li>
-          <li>Max Turbo Frequency 4.4 GHz</li>
-        </ul>
-        <a href="#" class="btn btn-primary">Add to cart</a>
-      </div>
-    </div>
-    </div>
-    <div class="m-1">
-      <div class="card w-100">
-      <img src="slick/image/19-117-957-V01.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">intel core i9</h5>
-        <ul>
-          <li>9th Gen Intel Processor</li>
-          <li>Max Turbo Frequency 5.0 GHz</li>
-        </ul>
-        <a href="#" class="btn btn-primary">Add to cart</a>
-      </div>
-    </div>
-    </div>
-    <div class="m-1">
-      <div class="card w-100">
-  <img src="slick/image/19-113-569-V10.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Ryzen 5</h5>
-    <ul>
-      <li>3rd Gen Ryzen</li>
-      <li>Max Boost Frequency 4.2 GHz</li>
-    </ul>
-    <a href="#" class="btn btn-primary">Add to cart</a>
-  </div>
-</div>
-    </div>
-    
-  </div>
 
 
 
+
+
+
+
+
+<!-- footer -->
     <div class="container-fluid">
-        <!--այսպես ավելի ճ՞իշտ է <div class="row">
-        <div class="col-12 col-md-3">
-          <p>Contact us</p>
-        </div>
-        <div class="col-12 col-md-3">
-          <p>Contact us</p>
-        </div>
-        <div class="col-12 col-md-3">
-          <p>Contact us</p>
-        </div>
-        <div class="col-12 col-md-3">
-          <p>Contact us</p>
-        </div>
-      </div>        -->
-  <div class="row d-flex bd-highlight">
+    <div class="row d-flex bd-highlight">
     <div class="card col-12 col-md">
   <div class="card-body d-flex bd-highlight">
       <h5><a class="card-title" href="#">Contact us</a></հ5>
@@ -548,6 +436,14 @@ If you're looking for a solid, budget-friendly yet feature-rich foundation for y
   </div>
 </div>
     <div class="card col-12 col-md" >
+  
+
+
+
+
+
+
+
   <div class="card-body d-flex bd-highlight">
       <h5><a class="card-title" href="#">Terms & conditions</a></հ5>
   </div>
@@ -603,83 +499,11 @@ If you're looking for a solid, budget-friendly yet feature-rich foundation for y
     <nav class="navbar-brand ml-5" >©Tumo Center For Creative Technologies</nav>
 </nav>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
-     <script type="text/javascript" src="slick/slick.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-     $('.responsive').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
- });
-
-
-
-
-
-
-  </script>
-
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -53,7 +53,7 @@
         <option value="3">&#8364;</option>
       </select>
     </div>
- 
+    <a class="navbar-brand" href="cart.html"><img src="image/Cart_Quantity-512.png" width="50px"></img></a>
     <div class="col-auto my-1 collapse navbar-collapse">
       <button type="button" class="btn btn-primary">Wishlist <span class="badge badge-danger">9</span>
         <span class="sr-only">unread messages</span>
@@ -66,8 +66,7 @@
     </form>
 </nav>
       
-    <!-- nav մի քանի հատ կարող ենք օգտ․ ????? -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark d-flex">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark d-flex">
   <a class="navbar-brand flex-grow-1" href="index.html">Shop</a>
   <div class="form-inline my-2 my-md-0">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -79,14 +78,153 @@
   <div class="dropdown ml-3">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My account</button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">Login</a>
-      <a class="dropdown-item" href="#">Register</a>
-      <a class="dropdown-item" href="#">My orders</a>
+      <a class="dropdown-item" data-toggle="modal" data-target="#login" href="#">Login</a>
+      <a class="dropdown-item" data-toggle="modal" data-target="#register" href="#">Register</a>
+      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myorder">My orders</a>
       <a class="dropdown-item" href="accountSettings.html">Account settings</a>
     </div>
 </div>
 </div>
 </nav>
+      
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group col-7">
+    <label for="exampleInputEmail1">Email address or name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group col-7">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check m-3">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember</label>
+  </div>
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Log in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group col-7">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group col-7">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="text" class="form-control" id="exampleInputText">
+  </div>
+  <div class="form-group col-7">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group col-7">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check m-3">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember</label>
+  </div>
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myorder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">My order</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-flex justify-content-center">
+        <div class="row"> 
+          <!-- row կարելի է առանց կոնտեյների օգտգործել՞՞՞՞՞ -->
+            <div class="col-12">
+                <div class="card w-100">
+  <img src="image/20-233-970-03.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">RAM</h5>
+    <p class="card-text">Designed for high-performance overclocking Each Vengeance LPX module is built with a pure aluminum heatspreader for faster heat dissipation and cooler operation; and the eight-layer PCB helps manage heat and provides superior overclocking headroom. Each IC is individually screened for performance potential. Designed for great looks Available in multiple colors to match your motherboard, your components, or just your style.</p>
+    <h1  class="d-flex justify-content-center text-success">180 &#8364;</h1>
+  </div>
+</div>
+</div>
+<div class="col-12">
+ <div class="card w-100">
+  <img src="image/1E8-0006-00101-S07.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">HDD</h5>
+    <p class="card-text">Fast transfer rates When connected to a USB 3.0 port, WD Elements portable storage delivers maximum performance for data transfers. Transfer a full-length HD movie in a fraction of the time it takes with USB 2.0. Performance may vary based on user's hardware and system configuration.</p>
+    <h1  class="d-flex justify-content-center text-success">64 &#8364;</h1>
+  </div>
+</div>
+</div>
+<div class="col-12">
+<div class="card w-100">
+  <img src="image/14-137-521-V01.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Video Card</h5>
+    <p class="card-text">All Solid Capacitors: 10 years long lifetime under full load. Lower temperature and higher efficiency. Aluminum core for higher stability. Dual Fans Thermal Design: Dual fans covers more area of heatsink to take heat away more efficiently. Afterburner Overclocking Utility: Wireless control through Android/iOS devices. </p>
+    <h1  class="d-flex justify-content-center text-success">120 &#8364;</h1>
+  </div>
+</div>
+</div>
+<div class="col-12">
+  <h1 class="text-success">Total: 450 &#8364;</h1>
+</div>
+</div>
+ </div>
+     <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       
 
 
@@ -98,60 +236,60 @@
   <ul class="navbar-nav col-12 d-flex justify-content-around">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category</a>
+Core Components</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="shoppage.html">Motherboards</a>
-          <a class="dropdown-item" href="shoppage.html">SubCategory2</a>
-          <a class="dropdown-item" href="shoppage.html">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">Video Cards</a>
+          <a class="dropdown-item" href="shoppage.html">Processors</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category
+Other core components
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">Power Supplies</a>
+          <a class="dropdown-item" href="shoppage.html">Computer Cases</a>
+          <a class="dropdown-item" href="shoppage.html">Fans</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category
+          Storage Devices
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">USB Flash Drives</a>
+          <a class="dropdown-item" href="shoppage.html">HDDs</a>
+          <a class="dropdown-item" href="shoppage.html">SSDs</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category
-        </a>
+Memory</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">Laptop Memory</a>
+          <a class="dropdown-item" href="shoppage.html">Mac Memory</a>
+          <a class="dropdown-item" href="shoppage.html">Desktop Memory</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category
+PC Cooling
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">Hard Drive Cooling</a>
+          <a class="dropdown-item" href="shoppage.html">Chipset Cooling</a>
+          <a class="dropdown-item" href="shoppage.html">VGA Cooling</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Computer Systems
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="shoppage.html">Desktops</a>
+          <a class="dropdown-item" href="shoppage.html">Laptops</a>
+          <a class="dropdown-item" href="shoppage.html">Intel NUC</a>
         </div>
       </li>
     </ul>
@@ -162,112 +300,40 @@ Category
 
 <!-- account -->
 <div class="container-fluid">
-  <div class="row p-3">
-    <div class="col-12 col-md-4 col-lg-2 bg-light p-2">
+  <div class="row">
+    <div class="col-12 col-lg-6">
       <h1>Menu</h1>
-      <div class="list-group">
-  <button type="button" class="list-group-item d-flex justify-content-between list-group-item-action active align-items-center">
-    Messages
-    <span class="badge badge-info badge-pill">14</span>
-  </button>
-  <button type="button" class="list-group-item list-group-item-action">My orders</button>
-  <button type="button" class="list-group-item list-group-item-action">You recently watched</button>
-  <button type="button" class="list-group-item list-group-item-action">My coupons</button>
-   <button type="button" class="list-group-item list-group-item-action">Recently viewed items</button>
-    <button type="button" class="list-group-item list-group-item-action">Delivery address</button>
-</div>
-
-    </div>
-    <div class="col-12 col-md-8 col-lg-10">
-      <img src="image/Programmyi-dlya-sozdaniya-avatarok.png" width="80">
-      <ul class="nav justify-content-center bg-secondary mt-2">
-  <li class="nav-item border-right border-dark">
-    <a class="nav-link  text-white active" href="#">Change my passsword</a>
-  </li>
-  <li class="nav-item border-right border-dark">
-    <a class="nav-link text-white" href="#">Change my email</a>
-  </li>
-  <li class="nav-item border-right border-dark">
-    <a class="nav-link text-white" href="#">Change my name</a>
-  </li>
-  <li class="nav-item border-right border-dark">
-    <a class="nav-link text-white" href="#">Change my avatar</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-white" href="#">My favorite products</a>
-  </li>
-  
-</ul>
-
-<!-- tab -->
-<div class="d-none d-md-block">
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">New products</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Discounted products</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Today's best deals</a>
-  </li>
-</ul>
-
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-    <div class="d-flex">
-    <div class="card" style="width: 300px;">
-  <img src="image/png-transparent-intel-core-celeron-central-processing-unit-lga-1151-intel-intel-central-processing-unit-brand.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Celeron</h5>
-    <ul>
-      <li>Processor Base Frequency 2.80 GHz</li>
-      <li>Cache 2 MB</li>
-      <li>Memory Types DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V</li>
-      <li>Max Memory Size (dependent on memory type) 64 GB</li>
-    </ul>
-    <a href="#" class="btn btn-primary">Add to cart</a>
-  </div>
-</div>
-
-    <div class="card" style="width: 300px;">
-  <img src="image/png-transparent-intel-core-celeron-central-processing-unit-lga-1151-intel-intel-central-processing-unit-brand.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Celeron</h5>
-    <ul>
-      <li>Processor Base Frequency 2.80 GHz</li>
-      <li>Cache 2 MB</li>
-      <li>Memory Types DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V</li>
-      <li>Max Memory Size (dependent on memory type) 64 GB</li>
-    </ul>
-    <a href="#" class="btn btn-primary">Add to cart</a>
-  </div>
-</div>
-
-    <div class="card" style="width: 300px;">
-  <img src="image/png-transparent-intel-core-celeron-central-processing-unit-lga-1151-intel-intel-central-processing-unit-brand.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Celeron</h5>
-    <ul>
-      <li>Processor Base Frequency 2.80 GHz</li>
-      <li>Cache 2 MB</li>
-      <li>Memory Types DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V</li>
-      <li>Max Memory Size (dependent on memory type) 64 GB</li>
-    </ul>
-    <a href="#" class="btn btn-primary">Add to cart</a>
-  </div>
-</div>
-
-
+      <div class="row">
+  <div class="col-3">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false">Recently viewed items</a>
+      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">My wishlist</a>
+      <a class="nav-link" id="v-pills-contact-tab" data-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false">My favorite products</a>
+      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
     </div>
   </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-     <div class="d-flex">
-    <div class="card" style="width: 300px;">
-  <img src="image/intel-core-i9-7980xe-extreme-edition-processor-2-6ghz-24-75mb-smart-cache-box-processor-lga-2066-gulftown-intel-png-clip-art.png" class="card-img-top" alt="...">
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+        <div class="d-flex">
+             <div class="card" style="width: 260px;">
+  <img src="image/png-transparent-intel-core-central-processing-unit-coffee-lake-lga-1151-intel-intel-central-proc_burned.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Intel core i5</h5>
+    <ul class="d-none d-xl-block">
+      <li>Processor Base Frequency 3.60 GHz</li>
+      <li>Cache 9 MB</li>
+      <li>Memory Types DDR4-2666</li>
+      <li>Max Memory Size (dependent on memory type) 128 GB</li>
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
+<div class="card" style="width: 260px;">
+  <img src="image/intel-core-i9-7980xe-extreme-edition-processor-2-6ghz-24-75mb-smart-cache-box-processor-lga-2066_burned.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Intel core i9</h5>
-    <ul>
+    <ul class="d-none d-xl-block">
     <li>Processor Base Frequency 2.60 GHz</li>
     <li>Cache 24.75 MB</li>
     <li>Memory Types DDR4-2666</li>
@@ -276,116 +342,252 @@ Category
     <a href="#" class="btn btn-primary">Add to cart</a>
   </div>
 </div>
-
-    <div class="card" style="width: 300px;">
-  <img src="image/intel-core-i9-7980xe-extreme-edition-processor-2-6ghz-24-75mb-smart-cache-box-processor-lga-2066-gulftown-intel-png-clip-art.png" class="card-img-top" alt="...">
+   <div class="card" style="width: 260px;">
+  <img src="image/png-transparent-intel-core-celeron-central-processing-unit-lga-1151-intel-intel-central-processi_burned.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Intel core i9</h5>
-    <ul>
-    <li>Processor Base Frequency 2.60 GHz</li>
-    <li>Cache 24.75 MB</li>
-    <li>Memory Types DDR4-2666</li>
-    <li>Max Memory Size (dependent on memory type) 128 GB</li>        
+    <h5 class="card-title">Celeron</h5>
+    <ul class="d-none d-xl-block">
+      <li>Processor Base Frequency 2.80 GHz</li>
+      <li>Cache 2 MB</li>
+      <li>Memory Types DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V</li>
+      <li>Max Memory Size (dependent on memory type) 64 GB</li>
     </ul>
     <a href="#" class="btn btn-primary">Add to cart</a>
   </div>
 </div>
-
-    <div class="card" style="width: 300px;">
-  <img src="image/intel-core-i9-7980xe-extreme-edition-processor-2-6ghz-24-75mb-smart-cache-box-processor-lga-2066-gulftown-intel-png-clip-art.png" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <div class="d-flex">
+             <div class="card" style="width: 300px;">
+  <img src="image/19-113-569-V10.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Intel core i9</h5>
-    <ul>
-    <li>Processor Base Frequency 2.60 GHz</li>
-    <li>Cache 24.75 MB</li>
-    <li>Memory Types DDR4-2666</li>
-    <li>Max Memory Size (dependent on memory type) 128 GB</li>        
+    <h5 class="card-title">Ryzen 5</h5>
+    <ul class="d-none d-xl-block">
+      <li>3rd Gen Ryzen</li>
+      <li>Socket AM4</li>
+      <li>Max Boost Frequency 4.2 GHz</li>
+      <li>DDR4 Support</li>
+      <li>L2 Cache 3MB</li>
+      <li>L3 Cache 32MB</li>
+      <li>Power 65W</li>
     </ul>
     <a href="#" class="btn btn-primary">Add to cart</a>
   </div>
 </div>
-
-
-    </div>
+<div class="card" style="width: 260px;">
+  <img src="image/13-145-198-V04.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Gigabyte Z490 Aorus Motherboard</h5>
+    <ul class="d-none d-xl-block">
+    <li>Supports 10th Gen Intel Core Series Processors</li>
+    <li>16 Phases Digital VRM with 90A Smart Power Stage</li>    
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
   </div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-     <div class="d-flex">
+</div>
+   <div class="card" style="width: 300px;">
+  <img src="image/14-126-263-V50.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">RTX 2080</h5>
+    <ul class="d-none d-xl-block">
+      <li>Auto-Extreme Technology uses automation to enhance reliability</li>
+      <li>11GB 352-Bit GDDR6</li>
+      <li>Core Clock 1350 MHz</li>
+      <li>Boost Clock OC Mode: 1665 MHz</li>
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
+        </div>
+
+      </div>
+      <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab">
+         <div class="d-flex">
+             <div class="card" style="width: 300px;">
+  <img src="image/22-236-339-V05.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">WD Blue HDD</h5>
+    <ul class="d-none d-xl-block">
+      <li>Specifically designed for small form factor PC's and Mac PC's</li>
+      <li>Performance 3.5-inch hard drive available in up to 1TB capacities</li>
+      <li>Designed for creative professionals, gamers and system builders</li>
+    </ul>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
 <div class="card" style="width: 300px;">
-  <img src="image/png-transparent-intel-core-central-processing-unit-coffee-lake-lga-1151-intel-intel-central-processing-unit-brand.png" class="card-img-top" alt="...">
+  <img src="image/22-179-010-V02.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Intel core i5</h5>
-    <ul>
-    <li>Processor Base Frequency 3.60 GHz</li>
-    <li>Cache 9 MB</li>
-    <li>Memory Types DDR4-2666</li>
-    <li>Max Memory Size (dependent on memory type) 128 GB</li>    
+    <h5 class="card-title">BarraCuda HDD</h5>
+    <ul class="d-none d-xl-block">
+    <li>Cost-effective storage upgrade for laptop or desktop computers</li>
+    <li>Store all your games, music, movies and more with up to 4TB of storage</li>    
+    <li>SATA 6Gb/s interface optimizes burst performance; 64MB Cache</li>    
     </ul>
     <a href="#" class="btn btn-primary">Add to cart</a>
   </div>
 </div>
-
-<div class="card" style="width: 300px;">
-  <img src="image/png-transparent-intel-core-central-processing-unit-coffee-lake-lga-1151-intel-intel-central-processing-unit-brand.png" class="card-img-top" alt="...">
+   <div class="card" style="width: 300px;">
+  <img src="image/22-236-345-V02.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Intel core i5</h5>
-    <ul>
-    <li>Processor Base Frequency 3.60 GHz</li>
-    <li>Cache 9 MB</li>
-    <li>Memory Types DDR4-2666</li>
-    <li>Max Memory Size (dependent on memory type) 128 GB</li>    
+    <h5 class="card-title">WD Black 500GB HDD</h5>
+    <ul class="d-none d-xl-block">
+      <li>Designed for creative professionals, gamers and system builders.</li>
+      <li>Performance storage available in up to 6TB capacities.</li>
+      <li>2X DRAM cache up to 128MB (6TB only) for faster read operations.</li>
     </ul>
     <a href="#" class="btn btn-primary">Add to cart</a>
   </div>
 </div>
-
-<div class="card" style="width: 300px;">
-  <img src="image/png-transparent-intel-core-central-processing-unit-coffee-lake-lga-1151-intel-intel-central-processing-unit-brand.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Intel core i5</h5>
-    <ul>
-    <li>Processor Base Frequency 3.60 GHz</li>
-    <li>Cache 9 MB</li>
-    <li>Memory Types DDR4-2666</li>
-    <li>Max Memory Size (dependent on memory type) 128 GB</li>    
-    </ul>
-    <a href="#" class="btn btn-primary">Add to cart</a>
-  </div>
 </div>
-
-
-    </div>
-  </div>
 </div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
+ <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+     <div class="d-flex bg-light border d-flex justify-content-center align-items-center" style="height: 200px;">
+        <h1 class="text-info">You didn't receive any messages.</h1>
+      </div>
       </div>
     </div>
   </div>
 </div>
+</div>
+    <div class="col-12 col-lg-6">
+    <img src="image/Programmyi-dlya-sozdaniya-avatarok.png" width="80">
+      <ul class="nav justify-content-center bg-secondary mt-2">
+  <li class="nav-item border-right border-dark">
+    <a class="nav-link  text-white active" data-toggle="modal" data-target="#exampleModal" href="#">Change my passsword</a>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Change my passsword</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+    <label for="exampleInputPassword1">Current Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+    <div class="form-group">
+    <label for="exampleInputPassword1">New Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+    <div class="form-group">
+    <label for="exampleInputPassword1">Confirm New Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </li>
+  <li class="nav-item border-right border-dark">
+    <a class="nav-link text-white"  data-toggle="modal" data-target="#exampleModal1"  href="#">Change my email</a>
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel1">Change my email</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+    <label for="exampleInputPassword1">Current email</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+    <div class="form-group">
+    <label for="exampleInputPassword1">New email</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </li>
+  <li class="nav-item border-right border-dark">
+    <a class="nav-link text-white"   data-toggle="modal" data-target="#exampleModal2"   href="#">Change my name</a>
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">Change my name</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+    <label for="exampleInputPassword2">Current name</label>
+    <input type="text" class="form-control" id="exampleInputPassword2">
+  </div>
+    <div class="form-group">
+    <label for="exampleInputPassword2">New name</label>
+    <input type="text" class="form-control" id="exampleInputPassword2">
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </li>
+  <li class="nav-item border-dark">
+    <a class="nav-link text-white"   data-toggle="modal" data-target="#exampleModal3"  href="#">Change my avatar</a>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">Upload image</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+    <label for="exampleInputPassword2" data-dismiss="modal"><a href="#"><img src="image/pngtree-image-upload-icon-photo-upload-icon-png-image_2047545.jpg"></a></label>
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </li>  
+</ul>
 
-    
-
-
-
-
-
+<!-- coupon -->
+<div class="row">
+  <div class="col-auto">
+    <a href="#"><img src="image/coupon1.jpg" class="w-100"></a>
+  </div>
+   <div class="col-auto">
+    <a href="#"><img src="image/coupon2.jpg" class="w-100"></a>
+  </div>
+   <div class="col-auto">
+    <a href="#"><img src="image/coupon3.jpg" class="w-100"></a>
+  </div>
+</div>
+  </div>
+  </div>
+</div>
 
  
 
     
-
-    <div class="container-fluid">
+<!-- footer -->
+    <div class="container-fluid mt-5">
     <div class="row d-flex bd-highlight">
     <div class="card col-12 col-md">
   <div class="card-body d-flex bd-highlight">

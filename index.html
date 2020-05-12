@@ -55,6 +55,7 @@
     </div>
  
     <div class="col-auto my-1 collapse navbar-collapse">
+          <a class="navbar-brand" href="cart.html"><img src="image/Cart_Quantity-512.png" width="50px"></img></a>
       <button type="button" class="btn btn-primary">Wishlist <span class="badge badge-danger">9</span>
         <span class="sr-only">unread messages</span>
       </button>
@@ -68,7 +69,7 @@
       
     <!-- nav մի քանի հատ կարող ենք օգտ․ ????? -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark d-flex">
-  <a class="navbar-brand flex-grow-1" href="#">Shop</a>
+  <a class="navbar-brand flex-grow-1" href="index.html">Shop</a>
   <div class="form-inline my-2 my-md-0">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <form class="form-inline my-2 my-md-0">
@@ -79,15 +80,153 @@
   <div class="dropdown ml-3">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My account</button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">Login</a>
-      <a class="dropdown-item" href="#">Register</a>
-      <a class="dropdown-item" href="#">My orders</a>
+      <a class="dropdown-item" data-toggle="modal" data-target="#login" href="#">Login</a>
+      <a class="dropdown-item" data-toggle="modal" data-target="#register" href="#">Register</a>
+      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myorder">My orders</a>
       <a class="dropdown-item" href="accountSettings.html">Account settings</a>
     </div>
 </div>
 </div>
 </nav>
       
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group col-7">
+    <label for="exampleInputEmail1">Email address or name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group col-7">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check m-3">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember</label>
+  </div>
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Log in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group col-7">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group col-7">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="text" class="form-control" id="exampleInputText">
+  </div>
+  <div class="form-group col-7">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group col-7">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check m-3">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember</label>
+  </div>
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myorder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">My order</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-flex justify-content-center">
+        <div class="row"> 
+          <!-- row կարելի է առանց կոնտեյների օգտգործել՞՞՞՞՞ -->
+            <div class="col-12">
+                <div class="card w-100">
+  <img src="image/20-233-970-03.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">RAM</h5>
+    <p class="card-text">Designed for high-performance overclocking Each Vengeance LPX module is built with a pure aluminum heatspreader for faster heat dissipation and cooler operation; and the eight-layer PCB helps manage heat and provides superior overclocking headroom. Each IC is individually screened for performance potential. Designed for great looks Available in multiple colors to match your motherboard, your components, or just your style.</p>
+    <h1  class="d-flex justify-content-center text-success">180 &#8364;</h1>
+  </div>
+</div>
+</div>
+<div class="col-12">
+ <div class="card w-100">
+  <img src="image/1E8-0006-00101-S07.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">HDD</h5>
+    <p class="card-text">Fast transfer rates When connected to a USB 3.0 port, WD Elements portable storage delivers maximum performance for data transfers. Transfer a full-length HD movie in a fraction of the time it takes with USB 2.0. Performance may vary based on user's hardware and system configuration.</p>
+    <h1  class="d-flex justify-content-center text-success">64 &#8364;</h1>
+  </div>
+</div>
+</div>
+<div class="col-12">
+<div class="card w-100">
+  <img src="image/14-137-521-V01.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Video Card</h5>
+    <p class="card-text">All Solid Capacitors: 10 years long lifetime under full load. Lower temperature and higher efficiency. Aluminum core for higher stability. Dual Fans Thermal Design: Dual fans covers more area of heatsink to take heat away more efficiently. Afterburner Overclocking Utility: Wireless control through Android/iOS devices. </p>
+    <h1  class="d-flex justify-content-center text-success">120 &#8364;</h1>
+  </div>
+</div>
+</div>
+<div class="col-12">
+  <h1 class="text-success">Total: 450 &#8364;</h1>
+</div>
+</div>
+ </div>
+     <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -98,60 +237,60 @@
   <ul class="navbar-nav col-12 d-flex justify-content-around">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category</a>
+Core Components</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="shoppage.html">Motherboards</a>
-          <a class="dropdown-item" href="shoppage.html">SubCategory2</a>
-          <a class="dropdown-item" href="shoppage.html">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">Video Cards</a>
+          <a class="dropdown-item" href="shoppage.html">Processors</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category
+Other core components
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">Power Supplies</a>
+          <a class="dropdown-item" href="shoppage.html">Computer Cases</a>
+          <a class="dropdown-item" href="shoppage.html">Fans</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category
+          Storage Devices
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">USB Flash Drives</a>
+          <a class="dropdown-item" href="shoppage.html">HDDs</a>
+          <a class="dropdown-item" href="shoppage.html">SSDs</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category
-        </a>
+Memory</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">Laptop Memory</a>
+          <a class="dropdown-item" href="shoppage.html">Mac Memory</a>
+          <a class="dropdown-item" href="shoppage.html">Desktop Memory</a>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Category
+PC Cooling
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">SubCategory1</a>
-          <a class="dropdown-item" href="#">SubCategory2</a>
-          <a class="dropdown-item" href="#">SubCategory3</a>
+          <a class="dropdown-item" href="shoppage.html">Hard Drive Cooling</a>
+          <a class="dropdown-item" href="shoppage.html">Chipset Cooling</a>
+          <a class="dropdown-item" href="shoppage.html">VGA Cooling</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Computer Systems
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="shoppage.html">Desktops</a>
+          <a class="dropdown-item" href="shoppage.html">Laptops</a>
+          <a class="dropdown-item" href="shoppage.html">Intel NUC</a>
         </div>
       </li>
     </ul>
@@ -171,17 +310,38 @@ Category
       <div class="d-flex justify-content-center w-50 mx-auto m-5">
       <div class="row">
         <div class="col-6">
-          <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          <p class="text-light">Multi-GPU Support:
+Supports NVIDIA Quad-GPU SLI Technology 
+Supports AMD 3-Way CrossFireX Technology
+
+ROG Exclusive Features:
+ROG RAMCache
+Overwolf
+Start Button
+Reset Button
+LN2 Mode
+Mem TweakIt
+KeyBot II
+- One-click Overclocking
+- X.M.P.
+- DirectKey
+- ClrCMOS
+- Power On
+UEFI BIOS features:
+- O.C. Profile
+- GPU.DIMM Post
+- Tweakers' Paradise
+- ROG SSD Secure Erase
+- Graphic Card Information Preview
+ROG RAMDisk
+Extreme Tweaker
+
+</p>
           <a href="#" class="btn btn-primary">Add to cart</a>
           <a href="#" class="btn btn-danger ml-1">View item</a>
         </div>
         <div class="col-6">
-           <img src="https://lh3.googleusercontent.com/proxy/hL3VC1HI_dmwJ6EqJLpBpwYtnZewucjCY_IXeq8QN5GcM4RWuYab5RK9dJvrgcUlthkhGZiw4DoqhesM-zDHIs9azlnNIWHKf2VLu9_0-MB0ZgLchJplUN0DqsncQ9uejpIyv_o" class="d-block w-100" alt="...">
+           <img src="image/PngItem_1906330.png" class="d-block w-100" alt="...">
         </div>
       </div>
     </div>
@@ -190,17 +350,33 @@ Category
       <div class="d-flex justify-content-center w-50 mx-auto m-5">
       <div class="row">
         <div class="col-6">
-          <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          <p class="text-light">BIOS:
+1 x 128MB Flash ROM, UEFI AMI BIOS, PnP, DMI3.0, WfM2.0, SM BIOS 3.0, ACPI 5.0, Multi-language BIOS, ASUS EZ Flash 3, CrashFree BIOS 3, F11 EZ Tuning Wizard, F6 Qfan Control, F3 My Favorites, F9 Quick Note, Last Modified log, F12 PrintScreen, F3 Shortcut functions and ASUS DRAM SPD (Serial Presence Detect) memory information
+
+Manageability:
+WfM2.0, DMI3.0, WOL by PME, PXE
+
+Support Disc:
+Drivers
+ROG GameFirst technology
+ROG RAMDisk
+ROG RAMCache
+ROG CPU-Z
+ROG Mem TweakIt
+Overwolf
+Keybot II
+Kaspersky Anti-Virus
+DAEMON Tools Pro Standard
+ASUS WebStorage
+ASUS Utilities
+
+
+ </p>
           <a href="#" class="btn btn-primary">Add to cart</a>
           <a href="#" class="btn btn-danger ml-1">View item</a>
         </div>
         <div class="col-6">
-           <img src="https://lh3.googleusercontent.com/proxy/hL3VC1HI_dmwJ6EqJLpBpwYtnZewucjCY_IXeq8QN5GcM4RWuYab5RK9dJvrgcUlthkhGZiw4DoqhesM-zDHIs9azlnNIWHKf2VLu9_0-MB0ZgLchJplUN0DqsncQ9uejpIyv_o" class="d-block w-100" alt="...">
+           <img src="image/PngItem_1906330.png" class="d-block w-100" alt="...">
         </div>
       </div>
     </div>
@@ -209,17 +385,48 @@ Category
        <div class="d-flex justify-content-center w-50 mx-auto m-5">
       <div class="row">
         <div class="col-6">
-        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <p class="text-light">
+  
+  Support Disc:
+Drivers
+ROG GameFirst technology
+ROG RAMDisk
+ROG RAMCache
+ROG CPU-Z
+ROG Mem TweakIt
+Overwolf
+Keybot II
+Kaspersky Anti-Virus
+DAEMON Tools Pro Standard
+ASUS WebStorage
+ASUS Utilities
+
+ROG Exclusive Features:
+ROG RAMCache
+Overwolf
+Start Button
+Reset Button
+LN2 Mode
+Mem TweakIt
+KeyBot II
+- One-click Overclocking
+- X.M.P.
+- DirectKey
+- ClrCMOS
+- Power On
+UEFI BIOS features:
+- O.C. Profile
+- GPU.DIMM Post
+- Tweakers' Paradise
+- ROG SSD Secure Erase
+- Graphic Card Information Preview
+ROG RAMDisk
+Extreme Tweaker </p>
           <a href="#" class="btn btn-primary">Add to cart</a>
           <a href="#" class="btn btn-danger ml-1">View item</a>
         </div>
         <div class="col-6">
-           <img src="https://lh3.googleusercontent.com/proxy/hL3VC1HI_dmwJ6EqJLpBpwYtnZewucjCY_IXeq8QN5GcM4RWuYab5RK9dJvrgcUlthkhGZiw4DoqhesM-zDHIs9azlnNIWHKf2VLu9_0-MB0ZgLchJplUN0DqsncQ9uejpIyv_o" class="d-block w-100" alt="...">
+           <img src="image/PngItem_1906330.png" class="d-block w-100" alt="...">
         </div>
       </div>
     </div>
@@ -242,60 +449,62 @@ Category
   <div class="row justify-content-center">
       <div class="col-12 col-md-4 col-lg-2">
        <div class="card">
-        <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+        <img src="image/14-930-010-V01.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title d-flex justify-content-center">Product</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="d-flex justify-content-center text-danger"><big>&#8364; 899</big></p>
-          <p class="d-flex justify-content-center text-success"><del><big>&#8364; 1239</big></del></p>
+          <h5 class="card-title d-flex justify-content-center">ASRock Radeon RX 570</h5>
+          <p class="card-text">With a stylish and streamlined design, the card’s two fans provide strong cooling performance and make your gaming rig stay cool.</p>
+          <p class="d-flex justify-content-center text-danger"><big>&#8364; 120</big></p>
+          <p class="d-flex justify-content-center text-success"><del><big>&#8364; 150</big></del></p>
           <a href="#" class="btn btn-primary d-flex justify-content-center">Add to cart</a>
       </div>
          </div>
       </div>
       <div class="col-12 col-md-4 col-lg-2">
        <div class="card">
-        <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+        <img src="image/14-137-256-V01.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title d-flex justify-content-center">Product</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="d-flex justify-content-center text-danger"><big>&#8364; 899</big></p>
-          <p class="d-flex justify-content-center text-success"><del><big>&#8364; 1239</big></del></p>
+          <h5 class="card-title d-flex justify-content-center">MSI Radeon RX 570</h5>
+          <p class="card-text">Maximizes downwards airflow and air dispersion to the massive heat sink below them.Intake more airflow to maximizes air dissipation to heat sink.
+
+</p>
+          <p class="d-flex justify-content-center text-danger"><big>&#8364; 144</big></p>
+          <p class="d-flex justify-content-center text-success"><del><big>&#8364; 189</big></del></p>
           <a href="#" class="btn btn-primary d-flex justify-content-center">Add to cart</a>
       </div>
          </div>
       </div>
       <div class="col-12 col-md-4 col-lg-2">
        <div class="card">
-        <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+        <img src="image/14-487-486-V01.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title d-flex justify-content-center">Product</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="d-flex justify-content-center text-danger"><big>&#8364; 899</big></p>
-          <p class="d-flex justify-content-center text-success"><del><big>&#8364; 1239</big></del></p>
+          <h5 class="card-title d-flex justify-content-center">EVGA GeForce RTX 2060</h5>
+          <p class="card-text">Take VR to a new level of realism with a combination of advanced AI.Get the highest level of performance from the moment you start playing.</p>
+          <p class="d-flex justify-content-center text-danger"><big>&#8364; 380</big></p>
+          <p class="d-flex justify-content-center text-success"><del><big>&#8364; 430</big></del></p>
           <a href="#" class="btn btn-primary d-flex justify-content-center">Add to cart</a>
       </div>
          </div>
       </div>
       <div class="col-12 col-md-4 col-lg-2">
        <div class="card">
-        <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+        <img src="image/14-932-208-V10.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title d-flex justify-content-center">Product</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="d-flex justify-content-center text-danger"><big>&#8364; 899</big></p>
-          <p class="d-flex justify-content-center text-success"><del><big>&#8364; 1239</big></del></p>
+          <h5 class="card-title d-flex justify-content-center">GIGABYTE Radeon RX 5700 XT</h5>
+          <p class="card-text">The airflow is spilt by the triangular fan edge, and guided smoothly through the 3D stripe curve on the fan surface.</p>
+          <p class="d-flex justify-content-center text-danger"><big>&#8364; 499</big></p>
+          <p class="d-flex justify-content-center text-success"><del><big>&#8364; 520</big></del></p>
           <a href="#" class="btn btn-primary d-flex justify-content-center">Add to cart</a>
       </div>
          </div>
       </div>
       <div class="col-12 col-md-4 col-lg-2">
        <div class="card">
-        <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+        <img src="image/14-202-287-V09.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title d-flex justify-content-center">Product</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="d-flex justify-content-center text-danger"><big>&#8364; 899</big></p>
-          <p class="d-flex justify-content-center text-success"><del><big>&#8364; 1239</big></del></p>
+          <h5 class="card-title d-flex justify-content-center">SAPPHIRE Radeon RX 550 </h5>
+          <p class="card-text">With 16.7M customizable color options and numerous lighting effects, you can choose lighting effects.</p>
+          <p class="d-flex justify-content-center text-danger"><big>&#8364; 89</big></p>
+          <p class="d-flex justify-content-center text-success"><del><big>&#8364; 100</big></del></p>
           <a href="#" class="btn btn-primary d-flex justify-content-center">Add to cart</a>
       </div>
          </div>
@@ -311,118 +520,106 @@ Category
   <div class="row p-5">
     <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
       <div class="card">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+    <img src="image/19-113-616-V07.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title d-flex justify-content-center">Product</h5>
-      <a href="#" class="btn btn-outline-success d-flex justify-content-center">Categories</a>
+      <a href="shoppage.html" class="btn btn-outline-success d-flex justify-content-center">Processors</a>
   </div>
     </div>
    </div>   
    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
       <div class="card">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+    <img src="image/17-139-251-V01.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title d-flex justify-content-center">Product</h5>
-      <a href="#" class="btn btn-outline-success d-flex justify-content-center">Categories</a>
+      <a href="shoppage.html" class="btn btn-outline-success d-flex justify-content-center">Power Supplies</a>
   </div>
     </div>
    </div>
    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
       <div class="card">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+    <img src="image/11-854-084-V21.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title d-flex justify-content-center">Product</h5>
-      <a href="#" class="btn btn-outline-success d-flex justify-content-center">Categories</a>
-  </div>
-    </div>
-   </div>
-
-   <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
-      <div class="card">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title d-flex justify-content-center">Product</h5>
-      <a href="#" class="btn btn-outline-success d-flex justify-content-center">Categories</a>
+      <a href="shoppage.html" class="btn btn-outline-success d-flex justify-content-center">Computer Cases</a>
   </div>
     </div>
    </div>
 
    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
       <div class="card">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+    <img src="image/gpu-png-5.png" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title d-flex justify-content-center">Product</h5>
-      <a href="#" class="btn btn-outline-success d-flex justify-content-center">Categories</a>
+      <a href="shoppage.html" class="btn btn-outline-success d-flex justify-content-center">Video Graphic Devices</a>
   </div>
     </div>
    </div>
 
    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
       <div class="card">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+    <img src="image/20-232-943-V01.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title d-flex justify-content-center">Product</h5>
-      <a href="#" class="btn btn-outline-success d-flex justify-content-center">Categories</a>
+      <a href="shoppage.html" class="btn btn-outline-success d-flex justify-content-center">Memory</a>
   </div>
     </div>
    </div>
 
    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
       <div class="card">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+    <img src="image/2YM-0004-00015-V08.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title d-flex justify-content-center">Product</h5>
-      <a href="#" class="btn btn-outline-success d-flex justify-content-center">Categories</a>
+      <a href="shoppage.html" class="btn btn-outline-success d-flex justify-content-center">PC Cooling</a>
   </div>
     </div>
    </div>
 
    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
       <div class="card">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+    <img src="image/35-181-130-V07.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title d-flex justify-content-center">Product</h5>
-      <a href="#" class="btn btn-outline-success d-flex justify-content-center">Categories</a>
+      <a href="shoppage.html" class="btn btn-outline-success d-flex justify-content-center">Fans</a>
   </div>
     </div>
    </div>
 
    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
       <div class="card">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+    <img src="image/20-156-174-V05.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title d-flex justify-content-center">Product</h5>
-      <a href="#" class="btn btn-outline-success d-flex justify-content-center">Categories</a>
+      <a href="shoppage.html" class="btn btn-outline-success d-flex justify-content-center">SSDs</a>
   </div>
     </div>
    </div>
 
    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
       <div class="card">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+    <img src="image/22-234-407-V01.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title d-flex justify-content-center">Product</h5>
-      <a href="#" class="btn btn-outline-success d-flex justify-content-center">Categories</a>
+      <a href="shoppage.html" class="btn btn-outline-success d-flex justify-content-center">HDDs</a>
   </div>
     </div>
    </div>
 
    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
       <div class="card">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+    <img src="image/20-167-462-V01.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title d-flex justify-content-center">Product</h5>
-      <a href="#" class="btn btn-outline-success d-flex justify-content-center">Categories</a>
+      <a href="shoppage.html" class="btn btn-outline-success d-flex justify-content-center">NVMe SSds</a>
   </div>
     </div>
    </div>
 
    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
       <div class="card">
-    <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+    <img src="image/20-331-258-V01.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title d-flex justify-content-center">Product</h5>
-      <a href="#" class="btn btn-outline-success d-flex justify-content-center">Categories</a>
+      <a href="shoppage.html" class="btn btn-outline-success d-flex justify-content-center">USB Flash Drives</a>
+  </div>
+    </div>
+   </div>
+
+   <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
+      <div class="card">
+    <img src="image/56-102-204-V01.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="shoppage.html" class="btn btn-outline-success d-flex justify-content-center">Intel NUCs</a>
   </div>
     </div>
    </div>
@@ -444,10 +641,10 @@ Category
   <div class="row justify-content-center">
       <div class="col-12 col-md-4 col-lg-2 p-0">
         <div class="card">
-          <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+          <img src="image/56-102-206-V06.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Product</h5>
-            <p class="d-flex justify-content-center text-danger"><big>&#8364; 545</big></p>
+            <h5 class="card-title d-flex justify-content-center">Intel NUC</h5>
+            <p class="d-flex justify-content-center text-danger"><big>&#8364; 655</big></p>
             <p class="d-flex justify-content-center text-success"><del><big>&#8364; 750</big></del></p>
             <a href="#" class="btn btn-outline-danger d-flex justify-content-center">Add to cart</a>
           </div>
@@ -455,55 +652,55 @@ Category
       </div>
       <div class="col-12 col-md-4 col-lg-2 p-0">
         <div class="card">
-          <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+          <img src="image/17-320-007-V01.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Product</h5>
-            <p class="d-flex justify-content-center text-danger"><big>&#8364; 545</big></p>
-            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 750</big></del></p>
+            <h5 class="card-title d-flex justify-content-center">ASUS ROG Strix  550w</h5>
+            <p class="d-flex justify-content-center text-danger"><big>&#8364; 119</big></p>
+            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 159</big></del></p>
             <a href="#" class="btn btn-outline-danger d-flex justify-content-center">Add to cart</a>
           </div>
        </div>
       </div>
       <div class="col-12 col-md-4 col-lg-2 p-0">
         <div class="card">
-          <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+          <img src="image/A68V_131672367110243610kdCTAwh5R4 (1).jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Product</h5>
-            <p class="d-flex justify-content-center text-danger"><big>&#8364; 545</big></p>
-            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 750</big></del></p>
+            <h5 class="card-title d-flex justify-content-center">250W TDP Fan</h5>
+            <p class="d-flex justify-content-center text-danger"><big>&#8364; 89</big></p>
+            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 100</big></del></p>
             <a href="#" class="btn btn-outline-danger d-flex justify-content-center">Add to cart</a>
           </div>
        </div>
       </div>
       <div class="col-12 col-md-4 col-lg-2 p-0">
         <div class="card">
-          <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+          <img src="image/11-139-087-V12.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Product</h5>
-            <p class="d-flex justify-content-center text-danger"><big>&#8364; 545</big></p>
-            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 750</big></del></p>
+            <h5 class="card-title d-flex justify-content-center">Corsair Case</h5>
+            <p class="d-flex justify-content-center text-danger"><big>&#8364; 170</big></p>
+            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 190</big></del></p>
             <a href="#" class="btn btn-outline-danger d-flex justify-content-center">Add to cart</a>
           </div>
        </div>
       </div>
       <div class="col-12 col-md-4 col-lg-2 p-0">
         <div class="card">
-          <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+          <img src="image/19-113-619-V07.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Product</h5>
-            <p class="d-flex justify-content-center text-danger"><big>&#8364; 545</big></p>
-            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 750</big></del></p>
+            <h5 class="card-title d-flex justify-content-center">Threadripper 3960X</h5>
+            <p class="d-flex justify-content-center text-danger"><big>&#8364; 1300</big></p>
+            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 1500</big></del></p>
             <a href="#" class="btn btn-outline-danger d-flex justify-content-center">Add to cart</a>
           </div>
        </div>
       </div>
       <div class="col-12 col-md-4 col-lg-2 p-0">
         <div class="card">
-          <img src="https://pngimage.net/wp-content/uploads/2018/06/gpu-png-5.png" class="card-img-top" alt="...">
+          <img src="image/13-119-151-V05.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Product</h5>
-            <p class="d-flex justify-content-center text-danger"><big>&#8364; 545</big></p>
-            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 750</big></del></p>
+            <h5 class="card-title d-flex justify-content-center">ASUS ROG Strix Z390-E </h5>
+            <p class="d-flex justify-content-center text-danger"><big>&#8364; 240</big></p>
+            <p class="d-flex justify-content-center text-success"><del><big>&#8364; 270</big></del></p>
             <a href="#" class="btn btn-outline-danger d-flex justify-content-center">Add to cart</a>
           </div>
        </div>
