@@ -26,6 +26,10 @@ p a{ color: #212529;
   background-color: #000 !important;
 }
 
+.gb{ 
+  color: #eceeef; 
+}
+
 
 td {
   width: 12%;
@@ -39,3 +43,8 @@ td {
     .slick-dots li button:before  {
       font-size: 1rem;
     }
+
+/*#fc9b00*/
+.text-white h4 {
+  text-transform: uppercase;
+}
